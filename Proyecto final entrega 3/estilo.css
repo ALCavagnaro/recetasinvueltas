@@ -1,0 +1,485 @@
+@charset "UTF-8";
+/*general*/
+/*imagen*/
+/*título de las fotos en pág principal*/
+/*h2*/
+/*botón*/
+/*acordion*/
+/*footer*/
+/*Grid*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+header {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 10px -2px rgba(176, 131, 54, 0.85);
+          box-shadow: 0px 3px 10px -2px rgba(176, 131, 54, 0.85);
+}
+
+main {
+  margin: 10px;
+  padding-bottom: 2rem;
+}
+
+nav {
+  background-color: #e6b464;
+}
+
+nav .boton {
+  background-color: lightpink;
+  border-radius: 5px;
+  border: whitesmoke solid 2px;
+  padding: 0.5em;
+}
+
+.icono {
+  width: 5.5rem;
+}
+
+.icono img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.galeria .galeriaRecetas {
+  /*Elemento sin formato previo modificado con SCSS clase 12*/
+  width: 300px;
+  height: 200px;
+}
+
+.galeria .galeriaRecetas img {
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
+  padding: 2px;
+}
+
+.galeria .galeriaRecetas img:hover {
+  opacity: 0.7;
+}
+
+.galeria .galeriaRecetas a {
+  text-decoration: none;
+  color: black;
+  position: initial;
+  -webkit-transform: translate(1%, -300%);
+          transform: translate(1%, -300%);
+}
+
+.galeria .galeriaRecetas a .nombreReceta {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 1.6rem;
+  color: whitesmoke;
+  font-weight: 700;
+  position: initial;
+  -webkit-transform: translate(1%, -300%);
+          transform: translate(1%, -300%);
+  opacity: 0;
+}
+
+.galeria .galeriaRecetas a .nombreReceta:hover {
+  opacity: 1;
+  text-shadow: 2px 0 0 grey, -2px 0 0 grey, 0 2px 0 grey, 0 -2px 0 grey, 1px 1px grey, -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey;
+}
+
+footer {
+  background-color: #e6b464;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  font-family: "Noto Sans HK", sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  padding: 0.1rem;
+  text-align: center;
+}
+
+footer .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .socialMedia img {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.1rem;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 400px) {
+  /*celular*/
+  footer {
+    background-color: #e6b464;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer p {
+    font-size: 0.5rem;
+  }
+  footer img {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  /*tablet*/
+  footer {
+    background-color: #e6b464;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer p {
+    font-size: 0.7rem;
+  }
+  footer img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.formulario {
+  background-color: cornsilk;
+  border: solid 1px #564D3F;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.formulario form {
+  text-align: left;
+  padding: 20px;
+  margin: 2rem;
+}
+
+.formulario .formulario__form--boton {
+  background-color: lightpink;
+  border-radius: 5px;
+  border: 1px solid hotpink;
+  padding: 0.5em;
+}
+
+.formulario input {
+  border-radius: 5px;
+  padding: 0.1rem;
+}
+
+.formulario select {
+  border-radius: 5px;
+  padding: 0.1rem;
+  border-color: pink;
+}
+
+.fotoReceta {
+  width: 300px;
+  height: 200px;
+  padding: 2px;
+  margin: auto;
+}
+
+.fotoReceta img {
+  border: solid 1px #564D3F;
+}
+
+.fotoReceta img:hover {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+}
+
+.ingredientes {
+  background-color: cornsilk;
+  border: solid 1px #564D3F;
+  border-radius: 5px;
+  padding: 0.7rem;
+  margin: 10px;
+}
+
+.ingredientes h2 {
+  background-color: lightpink;
+  border-radius: 5px;
+  border: whitesmoke solid 2px;
+  padding: 0.5em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.ingredientes li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 0.7rem;
+}
+
+.pasos {
+  background-color: cornsilk;
+  border: solid 1px #564D3F;
+  border-radius: 5px;
+  padding: 0.7rem;
+  margin: 10px;
+}
+
+.pasos h2 {
+  background-color: lightpink;
+  border-radius: 5px;
+  border: whitesmoke solid 2px;
+  padding: 0.5em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.pasos li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 0.7rem;
+}
+
+.acordion {
+  /*Bloque sin formato previo modificado con SCSS clase 12*/
+  background-color: #fff6db;
+  border: solid 1px #564D3F;
+  border-radius: 5px;
+}
+
+.acordion .listaAcordion {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(#fff6db));
+  background-image: linear-gradient(to top, white, #fff6db);
+}
+
+.acordion .listaAcordion ul {
+  list-style: none;
+}
+
+.acordion .listaAcordion ul li {
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+.tituloAcordion {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+
+.semana {
+  /*Bloque sin formato previo modificado con SCSS clase 12*/
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (14.27%)[7];
+      grid-template-columns: repeat(7, 14.27%);
+  -ms-grid-rows: 10% 45% 45%;
+      grid-template-rows: 10% 45% 45%;
+  grid-column-gap: 2px;
+  grid-row-gap: 1px;
+      grid-template-areas: "domingo lunes martes miércoles jueves viernes sábado" "aDomingo aLunes aMartes aMiércoles aJueves aViernes aSábado" "cDomingo cLunes cMartes cMiércoles cJueves cViernes cSábado";
+  padding: 8px;
+  width: 99.9%;
+  background-color: #EFDFE9;
+  margin: auto;
+  border: solid 1px #564D3F;
+  border-radius: 5px;
+}
+
+.nada1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: aDomingo;
+}
+
+.nada2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: aLunes;
+}
+
+.nada3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: aMartes;
+}
+
+.nada4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: aMiércoles;
+}
+
+.nada5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  grid-area: aJueves;
+}
+
+.nada6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
+  grid-area: aViernes;
+}
+
+.nada7 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 7;
+  grid-area: aSábado;
+}
+
+.nada8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: cDomingo;
+}
+
+.nada9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: cLunes;
+}
+
+.nada10 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: cMartes;
+}
+
+.nada11 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: cMiércoles;
+}
+
+.nada12 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: cJueves;
+}
+
+.nada13 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 6;
+  grid-area: cViernes;
+}
+
+.nada14 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  grid-area: cSábado;
+}
+
+.comida, .completar, .domingo, .lunes, .martes, .miércoles, .jueves, .viernes, .sábado {
+  padding: 0.5rem;
+  margin: 1rem;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.completar {
+  background-color: #e6b464;
+  border-radius: 5px;
+  border: white solid 2px;
+  padding: 0.5em;
+}
+
+.domingo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: domingo;
+}
+
+.lunes {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: lunes;
+}
+
+.martes {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: martes;
+}
+
+.miércoles {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: miércoles;
+}
+
+.jueves {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: jueves;
+}
+
+.viernes {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: viernes;
+}
+
+.sábado {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: sábado;
+}
+/*# sourceMappingURL=estilo.css.map */
