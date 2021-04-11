@@ -41,6 +41,8 @@ $fontSizeFooter:0.8rem;
 $fontFooterColor:black;
 /*Grid*/
 $gridSize:14.27%;
+/*404*/
+$bg-error:black;
 
 
 
@@ -52,6 +54,8 @@ $gridSize:14.27%;
 body {
     background-color: $color-bg;
 }
+
+
 
 header {
     border-radius: $border;
@@ -480,4 +484,41 @@ font-weight: bold;
     grid-area: sábado;
     @extend%header;
 } 
+
+
+.error {
+    background-color: $bg-error;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.error__titulo{
+    color:whitesmoke;
+    font-size: 2rem;
+    padding:5rem;
+    margin: auto;
+}
+
+.error__icono {
+    width:50%;
+    height:50%;
+    padding: $imgPadding;
+    margin: auto;
+    justify-items: center;
+      
+         img {
+                width:60%;
+                height:60%;
+                padding: $imgPadding;
+                align-self: center;
+                  
+              }
+            
+}
+
+
+
+
 
