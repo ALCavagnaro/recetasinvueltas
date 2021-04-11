@@ -3,7 +3,8 @@
 /*imagen*/
 /*título de las fotos en pág principal*/
 /*h2*/
-/*botón*/
+/*botón1*/
+/*botón2*/
 /*acordion*/
 /*footer*/
 /*Grid*/
@@ -28,15 +29,15 @@ main {
   padding-bottom: 2rem;
 }
 
-nav {
-  background-color: #e6b464;
-}
-
-nav .boton {
+nav .boton, .formulario .formulario__boton2 {
   background-color: lightpink;
   border-radius: 5px;
   border: whitesmoke solid 2px;
-  padding: 0.5em;
+  padding: 0.5rem;
+}
+
+nav {
+  background-color: #e6b464;
 }
 
 .icono {
@@ -197,37 +198,55 @@ footer .socialMedia img {
 }
 
 .formulario {
+  /*background-color: $color-bg; Analizar si queda mejor*/
   background-color: cornsilk;
-  border: solid 1px #564D3F;
   border-radius: 5px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   margin: auto;
+  width: 80%;
+  padding: 4.5rem;
 }
 
 .formulario form {
-  text-align: left;
   padding: 20px;
   margin: 2rem;
+  width: 90%;
 }
 
-.formulario .formulario__form--boton {
-  background-color: lightpink;
-  border-radius: 5px;
-  border: 1px solid hotpink;
-  padding: 0.5em;
+.formulario .formulario__input {
+  border: none;
+  /*padding: 0.5rem;*/
+  width: 100%;
+  height: 100%;
 }
 
-.formulario input {
+.formulario .formulario__campo {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: whitesmoke solid 2px;
+  border: 3px solid #61c0bf;
   border-radius: 5px;
-  padding: 0.1rem;
+}
+
+.formulario .formulario__boton {
+  background-color: #bbded6;
+  border-radius: 5px;
+  border: 1px solid #61c0bf;
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 .formulario select {
+  background-color: #bbded6;
   border-radius: 5px;
-  padding: 0.1rem;
-  border-color: pink;
+  border: 1px solid #61c0bf;
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.formulario .formualario__label {
+  width: 100%;
 }
 
 .fotoReceta {
@@ -258,7 +277,7 @@ footer .socialMedia img {
   background-color: lightpink;
   border-radius: 5px;
   border: whitesmoke solid 2px;
-  padding: 0.5em;
+  padding: 0.5rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -282,7 +301,7 @@ footer .socialMedia img {
   background-color: lightpink;
   border-radius: 5px;
   border: whitesmoke solid 2px;
-  padding: 0.5em;
+  padding: 0.5rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -439,7 +458,7 @@ footer .socialMedia img {
   background-color: #e6b464;
   border-radius: 5px;
   border: white solid 2px;
-  padding: 0.5em;
+  padding: 0.5rem;
 }
 
 .domingo {
