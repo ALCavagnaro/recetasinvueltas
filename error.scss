@@ -1,0 +1,25 @@
+@import "variables";
+
+.error__titulo{
+    color:whitesmoke;
+    font-size: 2rem;
+    padding:5rem;
+    margin: auto;
+}
+
+.error__icono {
+    width:50%;
+    height:50%;
+    padding: $imgPadding;
+    margin: auto;
+    justify-items: center;
+      
+         img {
+                width:60%;
+                height:60%;
+                padding: $imgPadding;
+                align-self: center;
+                  
+              }
+            
+}

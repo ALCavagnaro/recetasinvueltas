@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/*general*/
+/*imagen*/
+/*título de las fotos en pág principal*/
+/*h2*/
+/*botón1*/
+/*botón2*/
+/*acordion*/
+/*footer*/
+/*Grid*/
+/*404*/
+footer {
+  background-color: #e6b464;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  font-family: "Noto Sans HK", sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  padding: 0.1rem;
+  text-align: center;
+}
+
+footer .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .socialMedia img {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.1rem;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 400px) {
+  /*celular*/
+  footer {
+    background-color: #e6b464;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer p {
+    font-size: 0.5rem;
+  }
+  footer img {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  /*tablet*/
+  footer {
+    background-color: #e6b464;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer p {
+    font-size: 0.7rem;
+  }
+  footer img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

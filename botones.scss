@@ -1,0 +1,8 @@
+@import "variables";
+
+%boton {
+    background-color: $botonColor;
+    border-radius: $border;
+    border: $botonBorde;
+    padding: $botonPadding;
+}

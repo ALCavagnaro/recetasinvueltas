@@ -9,45 +9,161 @@
 /*footer*/
 /*Grid*/
 /*404*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: whitesmoke;
-}
-
-header {
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 3px 10px -2px rgba(176, 131, 54, 0.85);
-          box-shadow: 0px 3px 10px -2px rgba(176, 131, 54, 0.85);
-}
-
-main {
-  margin: 10px;
-  padding-bottom: 2rem;
-}
-
-nav .boton, .formulario .formulario__boton2 {
+/*general*/
+/*imagen*/
+/*título de las fotos en pág principal*/
+/*h2*/
+/*botón1*/
+/*botón2*/
+/*acordion*/
+/*footer*/
+/*Grid*/
+/*404*/
+/*general*/
+/*imagen*/
+/*título de las fotos en pág principal*/
+/*h2*/
+/*botón1*/
+/*botón2*/
+/*acordion*/
+/*footer*/
+/*Grid*/
+/*404*/
+.formulario .formulario__boton2, nav .boton {
   background-color: lightpink;
   border-radius: 5px;
   border: whitesmoke solid 2px;
   padding: 0.5rem;
 }
 
-nav {
-  background-color: #e6b464;
+h2 {
+  text-align: center;
+  padding: 3rem;
 }
 
-.icono {
-  width: 5.5rem;
+.contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.icono img {
+.formulario {
+  /*background-color: $color-bg; Analizar si queda mejor*/
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(#fff6db));
+  background-image: linear-gradient(to top, white, #fff6db);
+  border-radius: 5px;
+  margin: auto;
+  padding: 4.5rem;
+  width: 60%;
+}
+
+.formulario .formulario__label {
+  padding: 0.7rem;
+  font-size: 110%;
+  margin: 1%;
   width: 100%;
-  height: 100%;
+}
+
+.formulario .formulario__input {
+  background-color: white;
+  color: whitesmoke solid 2px;
+  border: 3px solid #61c0bf;
+  border-radius: 5px;
+  height: 3rem;
+  width: 40%;
+  margin: 10px;
+  float: center;
+}
+
+.formulario .formulario__input--ingrediente {
+  background-color: white;
+  color: whitesmoke solid 2px;
+  border: 3px solid pink;
+  border-radius: 5px;
+  height: 3rem;
+  width: 80%;
+  margin: 10px;
+}
+
+.formulario .formulario__input--pasos {
+  background-color: white;
+  color: whitesmoke solid 2px;
+  border: 3px solid #e6c486;
+  border-radius: 5px;
+  height: 5rem;
+  width: 80%;
+  margin: 10px;
+}
+
+.formulario .formulario__boton--ingrediente {
+  background-color: pink;
+  border-radius: 5px;
+  border: 1px solid #e9b7e5;
   padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  width: 3rem;
+}
+
+.formulario .formulario__boton {
+  background-color: #bbded6;
+  border-radius: 5px;
+  border: 1px solid #61c0bf;
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #4b4747;
+}
+
+.formulario .formulario__img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.formulario .formulario__img:hover {
+  background-color: paleturquoise;
+}
+
+.formulario .formulario__agregar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  cursor: pointer;
+}
+
+.formulario .formulario__agregar strong {
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.formulario select {
+  background-color: #bbded6;
+  border-radius: 5px;
+  border: 1px solid #61c0bf;
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #4b4747;
+}
+
+.formulario .formulario__boton2 {
+  float: right;
+}
+
+.formulario .boton_enviarBorrar {
+  float: right;
 }
 
 .galeria {
@@ -62,7 +178,6 @@ nav {
 }
 
 .galeria .galeriaRecetas {
-  /*Elemento sin formato previo modificado con SCSS clase 12*/
   width: 300px;
   height: 200px;
 }
@@ -103,6 +218,58 @@ nav {
   text-shadow: 2px 0 0 grey, -2px 0 0 grey, 0 2px 0 grey, 0 -2px 0 grey, 1px 1px grey, -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey;
 }
 
+/*general*/
+/*imagen*/
+/*título de las fotos en pág principal*/
+/*h2*/
+/*botón1*/
+/*botón2*/
+/*acordion*/
+/*footer*/
+/*Grid*/
+/*404*/
+header {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 10px -2px rgba(176, 131, 54, 0.85);
+          box-shadow: 0px 3px 10px -2px rgba(176, 131, 54, 0.85);
+}
+
+main {
+  margin: 10px;
+  padding-bottom: 2rem;
+}
+
+.formulario .formulario__boton2, nav .boton {
+  background-color: lightpink;
+  border-radius: 5px;
+  border: whitesmoke solid 2px;
+  padding: 0.5rem;
+}
+
+nav {
+  background-color: #e6b464;
+}
+
+.icono {
+  width: 5.5rem;
+}
+
+.icono img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+/*general*/
+/*imagen*/
+/*título de las fotos en pág principal*/
+/*h2*/
+/*botón1*/
+/*botón2*/
+/*acordion*/
+/*footer*/
+/*Grid*/
+/*404*/
 footer {
   background-color: #e6b464;
   display: -webkit-box;
@@ -197,58 +364,16 @@ footer .socialMedia img {
   }
 }
 
-.formulario {
-  /*background-color: $color-bg; Analizar si queda mejor*/
-  background-color: cornsilk;
-  border-radius: 5px;
-  margin: auto;
-  width: 80%;
-  padding: 4.5rem;
-}
-
-.formulario form {
-  padding: 20px;
-  margin: 2rem;
-  width: 90%;
-}
-
-.formulario .formulario__input {
-  border: none;
-  /*padding: 0.5rem;*/
-  width: 100%;
-  height: 100%;
-}
-
-.formulario .formulario__campo {
-  font-family: "Roboto", sans-serif;
-  background-color: white;
-  color: whitesmoke solid 2px;
-  border: 3px solid #61c0bf;
-  border-radius: 5px;
-}
-
-.formulario .formulario__boton {
-  background-color: #bbded6;
-  border-radius: 5px;
-  border: 1px solid #61c0bf;
-  padding: 0.5rem;
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-
-.formulario select {
-  background-color: #bbded6;
-  border-radius: 5px;
-  border: 1px solid #61c0bf;
-  padding: 0.5rem;
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-
-.formulario .formualario__label {
-  width: 100%;
-}
-
+/*general*/
+/*imagen*/
+/*título de las fotos en pág principal*/
+/*h2*/
+/*botón1*/
+/*botón2*/
+/*acordion*/
+/*footer*/
+/*Grid*/
+/*404*/
 .fotoReceta {
   width: 300px;
   height: 200px;
@@ -313,8 +438,36 @@ footer .socialMedia img {
   padding: 0.7rem;
 }
 
+/*general*/
+/*imagen*/
+/*título de las fotos en pág principal*/
+/*h2*/
+/*botón1*/
+/*botón2*/
+/*acordion*/
+/*footer*/
+/*Grid*/
+/*404*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+/*general*/
+/*imagen*/
+/*título de las fotos en pág principal*/
+/*h2*/
+/*botón1*/
+/*botón2*/
+/*acordion*/
+/*footer*/
+/*Grid*/
+/*404*/
 .acordion {
-  /*Bloque sin formato previo modificado con SCSS clase 12*/
   background-color: #fff6db;
   border: solid 1px #564D3F;
   border-radius: 5px;
@@ -339,8 +492,17 @@ footer .socialMedia img {
   font-weight: 800;
 }
 
+/*general*/
+/*imagen*/
+/*título de las fotos en pág principal*/
+/*h2*/
+/*botón1*/
+/*botón2*/
+/*acordion*/
+/*footer*/
+/*Grid*/
+/*404*/
 .semana {
-  /*Bloque sin formato previo modificado con SCSS clase 12*/
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (14.27%)[7];
@@ -516,6 +678,16 @@ footer .socialMedia img {
       flex-wrap: wrap;
 }
 
+/*general*/
+/*imagen*/
+/*título de las fotos en pág principal*/
+/*h2*/
+/*botón1*/
+/*botón2*/
+/*acordion*/
+/*footer*/
+/*Grid*/
+/*404*/
 .error__titulo {
   color: whitesmoke;
   font-size: 2rem;

@@ -1,0 +1,49 @@
+/*general*/
+$color-bg:whitesmoke;
+$border:5px;
+$shadow: 0px 3px 10px -2px rgba(176,131,54,0.85);
+$color-primary: #e6b464;
+$iconoWidth: 5.5rem;
+/*imagen*/
+$imgRecetaAncho: 300px;
+$imgRecetaAlto: 200px;
+$imgPadding:2px;
+$imgOpacity:0.7;
+/*título de las fotos en pág principal*/
+$letraReceta: 'Roboto', sans-serif;
+$sizeLetraReceta: 1.6rem;
+$lugarNombreReceta:center;
+$colorNombreReceta:whitesmoke;
+/*h2*/
+$colorH2:#564D3F;
+$marginH2:10px;
+$paddingH2:0.7rem;
+$FontH2: 'Roboto', sans-serif;
+$SizeFontH2:1rem;
+$color-secondary:cornsilk;
+$border-secondary: solid 1px #564D3F;
+$opacity-secondary:0.7;
+$padding-secondary:20px;
+$margin-secondary:2rem;
+/*botón1*/
+$botonColor:lightpink;
+$botonBorde: whitesmoke solid 2px;
+$botonPadding:0.5em;
+/*botón2*/
+$botonColor2:#bbded6;
+$botonBorde2:#61c0bf;
+$botonPadding:0.5rem;
+/*acordion*/
+$bg-ColorAcordion:#fff6db;
+$bg-ColorAcordion-secondary: #836de6;
+$BorderAcordion:#836de6 solid 1px;
+/*footer*/
+$paddingFooter:0.1rem;
+$marginFooter:1rem;
+$fontFooter:'Noto Sans HK', sans-serif;
+$fontSizeFooter:0.8rem;
+$fontFooterColor:black;
+/*Grid*/
+$gridSize:14.27%;
+/*404*/
+$bg-error:black;

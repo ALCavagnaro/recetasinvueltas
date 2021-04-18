@@ -1,0 +1,119 @@
+
+@import "variables";
+@import "botones";
+
+h2{text-align: center;
+   padding:3rem;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario {               
+    /*background-color: $color-bg; Analizar si queda mejor*/
+    background-image: linear-gradient(to top, white, #fff6db);
+    border-radius: $border;                 
+    margin: auto;
+    padding: 4.5rem;
+    width: 60%;
+  
+    .formulario__label{
+               padding: $paddingH2;
+               font-size: 110%;
+               margin: 1%;
+               width: 100%;
+               }
+
+           .formulario__input{
+            background-color: white;
+            color:$botonBorde;
+            border:3px solid $botonBorde2;
+            border-radius: $border;
+            height: 3rem;
+            width: 40%;
+            margin: $marginH2;
+            float: center;
+               }
+
+            .formulario__input--ingrediente{
+                background-color: white;
+                color:$botonBorde;
+                border:3px solid pink;
+                border-radius: $border;
+                height: 3rem;
+                width: 80%;
+                margin: $marginH2;     
+                }
+
+            .formulario__input--pasos{
+            background-color: white;
+            color:$botonBorde;
+            border:3px solid rgb(230, 196, 134);
+            border-radius: $border;
+            height: 5rem;
+            width: 80%;
+            margin: $marginH2;
+            }
+
+           .formulario__boton--ingrediente{
+            background-color: pink;
+            border-radius: $border;
+            border: 1px solid rgb(233, 183, 229);
+            padding: $botonPadding;
+            font-family: $FontH2;
+            color:white;
+            width:3rem;
+           }
+
+           .formulario__boton{
+
+            background-color: $botonColor2;
+            border-radius: $border;
+            border: 1px solid $botonBorde2;
+            padding: $botonPadding;
+            font-family: $FontH2;
+            color:rgb(75, 71, 71);
+        
+        }
+
+        .formulario__img {
+            width:3rem;
+            height: 3rem;
+            &:hover{background-color: paleturquoise;}
+            
+        }
+
+        .formulario__agregar{
+            display:flex;
+            flex-direction: row;
+            justify-content: start;
+            cursor:pointer;
+            strong
+                {padding-left:2rem;
+                padding-top:1rem; 
+                }
+
+            }
+        select{
+            background-color: $botonColor2;
+            border-radius: $border;
+            border: 1px solid $botonBorde2;
+            padding: $botonPadding;
+            font-family: $FontH2;
+            color:rgb(75, 71, 71);
+        }
+
+
+        .formulario__boton2{
+        @extend%boton;
+        float: right;
+        }
+
+        .boton_enviarBorrar{
+            float: right;
+        }
+
+    }

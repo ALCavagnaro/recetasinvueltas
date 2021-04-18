@@ -1,0 +1,25 @@
+@import "variables";
+
+.acordion {                                                
+    background-color: $bg-ColorAcordion;
+    border: $border-secondary;
+    border-radius: $border;
+
+        .listaAcordion {
+            background-image: linear-gradient(to top, white, #fff6db);
+        
+         ul {
+             list-style: none;
+                li{
+                    opacity:1;
+                    font-family: $FontH2;
+                }             
+         }
+}
+
+}
+
+.tituloAcordion{
+    font-family: $FontH2;
+    font-weight: 800;
+}

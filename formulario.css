@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/*general*/
+/*imagen*/
+/*título de las fotos en pág principal*/
+/*h2*/
+/*botón1*/
+/*botón2*/
+/*acordion*/
+/*footer*/
+/*Grid*/
+/*404*/
+/*general*/
+/*imagen*/
+/*título de las fotos en pág principal*/
+/*h2*/
+/*botón1*/
+/*botón2*/
+/*acordion*/
+/*footer*/
+/*Grid*/
+/*404*/
+.formulario .formulario__boton2 {
+  background-color: lightpink;
+  border-radius: 5px;
+  border: whitesmoke solid 2px;
+  padding: 0.5rem;
+}
+
+h2 {
+  text-align: center;
+  padding: 3rem;
+}
+
+.contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulario {
+  /*background-color: $color-bg; Analizar si queda mejor*/
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(#fff6db));
+  background-image: linear-gradient(to top, white, #fff6db);
+  border-radius: 5px;
+  margin: auto;
+  padding: 4.5rem;
+  width: 60%;
+}
+
+.formulario .formulario__label {
+  padding: 0.7rem;
+  font-size: 110%;
+  margin: 1%;
+  width: 100%;
+}
+
+.formulario .formulario__input {
+  background-color: white;
+  color: whitesmoke solid 2px;
+  border: 3px solid #61c0bf;
+  border-radius: 5px;
+  height: 3rem;
+  width: 40%;
+  margin: 10px;
+  float: center;
+}
+
+.formulario .formulario__input--ingrediente {
+  background-color: white;
+  color: whitesmoke solid 2px;
+  border: 3px solid pink;
+  border-radius: 5px;
+  height: 3rem;
+  width: 80%;
+  margin: 10px;
+}
+
+.formulario .formulario__input--pasos {
+  background-color: white;
+  color: whitesmoke solid 2px;
+  border: 3px solid #e6c486;
+  border-radius: 5px;
+  height: 5rem;
+  width: 80%;
+  margin: 10px;
+}
+
+.formulario .formulario__boton--ingrediente {
+  background-color: pink;
+  border-radius: 5px;
+  border: 1px solid #e9b7e5;
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  width: 3rem;
+}
+
+.formulario .formulario__boton {
+  background-color: #bbded6;
+  border-radius: 5px;
+  border: 1px solid #61c0bf;
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #4b4747;
+}
+
+.formulario .formulario__img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.formulario .formulario__img:hover {
+  background-color: paleturquoise;
+}
+
+.formulario .formulario__agregar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  cursor: pointer;
+}
+
+.formulario .formulario__agregar strong {
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.formulario select {
+  background-color: #bbded6;
+  border-radius: 5px;
+  border: 1px solid #61c0bf;
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #4b4747;
+}
+
+.formulario .formulario__boton2 {
+  float: right;
+}
+
+.formulario .boton_enviarBorrar {
+  float: right;
+}
+/*# sourceMappingURL=formulario.css.map */

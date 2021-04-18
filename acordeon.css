@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/*general*/
+/*imagen*/
+/*título de las fotos en pág principal*/
+/*h2*/
+/*botón1*/
+/*botón2*/
+/*acordion*/
+/*footer*/
+/*Grid*/
+/*404*/
+.acordion {
+  background-color: #fff6db;
+  border: solid 1px #564D3F;
+  border-radius: 5px;
+}
+
+.acordion .listaAcordion {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(#fff6db));
+  background-image: linear-gradient(to top, white, #fff6db);
+}
+
+.acordion .listaAcordion ul {
+  list-style: none;
+}
+
+.acordion .listaAcordion ul li {
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+.tituloAcordion {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+/*# sourceMappingURL=acordeon.css.map */

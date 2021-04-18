@@ -51,90 +51,81 @@
               </div>
             </div>
           </nav>
-    </header>
+      </header>
         <br>
         <br>
+        <h2>Completá los siguientes datos y compartí tu receta</h2>
         <main>
-                <form class="formulario">
-                    <div class="col-md-8 col-sm-8 col-12 formulario__campo formulario_email">
-                    <label for="inputEmail4" class="form-label"></label>
-                    <input type="email" class="formulario__input" placeholder="Correo electrónico" id="inputEmail4">
-                    </div>
-                    <br>
-                    <br>
-                    <div class="col-md-8 col-sm-8 col-12 formulario__campo formulario__título">
-                        <label for="formGroupExampleInput" class="form-label"></label>
-                        <input type="text" class="formulario__input" placeholder="Título de la receta" id="formGroupExampleInput">
-                    </div>
-                    <br>
-                    <br>
-                    <div class="col-md-7 col-sm-8 col-10 formulario__campo formulario__ingrediente">
-                        <label for="formGroupExampleInput" class="form-label"></label>
-                        <input type="text" class="formulario__input" placeholder="Ingrediente 1" id="formGroupExampleInput">
-                    </div>
-                    <br>
-                    <div class="col-md-7 col-sm-8 col-10 formulario__campo formulario__ingrediente">
-                      <label for="formGroupExampleInput" class="form-label"></label>
-                      <input type="text" class="formulario__input" placeholder="Ingrediente 2" id="formGroupExampleInput">
-                    </div>
-                    <br>
-                    <div class="col-md-7 col-sm-8 col-10 formulario__campo formulario__ingrediente">
-                      <label for="formGroupExampleInput" class="form-label"></label>
-                      <input type="text" class="formulario__input" placeholder="Ingrediente 3" id="formGroupExampleInput">
-                    </div>
-                    <br>
-                    <br>
-                    <div class="input-group input-group-lg formulario__campo">
-                        <span class="formulario__boton" id="inputGroup-sizing-lg">Paso 1</span>
-                        <input type="text" class="formulario__input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-                      </div>
-                      <br>
-                      <div class="input-group input-group-lg formulario__campo">
-                        <span class="formulario__boton" id="inputGroup-sizing-lg">Paso 2</span>
-                        <input type="text" class="formulario__input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-                      </div>
-                      <br>
-                      <div class="input-group input-group-lg formulario__campo">
-                        <span class="formulario__boton" id="inputGroup-sizing-lg">Paso 3</span>
-                        <input type="text" class="formulario__input" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-                      </div>
-                      <br>
-                      <br>
-                      <div class="col-md-3 col-sm-6 col-12">
-                        <select id="inputGroupSelect01">
-                        <option selected>Seleccioná el número de porciones</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        </select>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="input-group mb-3 col-md-3 col-sm-6 col-12 formulario__campo">
-                        <input type="file" class="formulario__input" id="inputGroupFile02">
-                        <label class="formulario__boton" for="inputGroupFile02">Subir foto de receta</label>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="form-check col-md-3 col-sm-6 col-12">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck"> 
-                          Estoy de acuerdo con los<a href="terminosycondiciones.html"> términos y condiciones</a>
-                        </label>
-                        <div class="invalid-feedback">
-                        Completá este campo para continuar
+                <div class="formulario">
+                    <form method="get">
+                      <div class= "contenido">
+                        <label class= "formulario__label" for="email">Correo electrónico</label>
+                        <input class="formulario__input" required= "required" type="email" name="email" placeholder="Ej.:maría@email.com" id="inputEmail4">
+                        <br>
+                        <br>
+                        <label class= "formulario__label" for="formGroupExampleInput">Título de la receta</label>
+                        <input class="formulario__input" required="required" type="text" maxlength="50" placeholder="Ingresá el título de tu receta" id="formGroupExampleInput">
+                        <br>
+                        <br>
+                        <label class= "formulario__label" for="email">Ingresá los ingredientes de tu receta</label>
+                        <input class="formulario__input--ingrediente" type="text" placeholder="1er. ingrediente. Ej: 200 g. de manteca" maxlength="50">
+                        <br>
+                        <input class="formulario__input--ingrediente" type="text" placeholder="2do. ingrediente. Ej: 1/2 L. de leche descremada" maxlength="50" id="formGroupExampleInput">
+                        <br>
+                        <input class="formulario__input--ingrediente" type="text" placeholder="3er. ingrediente. Ej: 3 yemas de huevo" maxlength="50" id="formGroupExampleInput">
+                        <br>
+                        <div class="formulario__agregar">
+                          <img class="formulario__img" src="img/add.png">
+                          <strong>Agregar ingrediente</strong>
                         </div>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="col-md-3 col-sm-6 col-12">
-                      <button class="formulario__boton2" type="submit" value="Enviar">Enviar</button>
-                      <button class="formulario__boton2" type="reset" value="Borrar">Borrar</button>
-                    </div>
-                </form>
+                        <br>
+                        <label class= "formulario__label" for="email">Describe brevemente los pasos</label>
+                        <textarea class="formulario__input--pasos" type="text" placeholder="Max. 250 caracteres" maxlength="250"></textarea>
+                        <br>
+                        <textarea class="formulario__input--pasos" type="text" placeholder="Max. 250 caracteres" maxlength="250"></textarea> 
+                        <br>
+                        <textarea class="formulario__input--pasos" type="text" placeholder="Max. 250 caracteres" maxlength="250"></textarea>
+                        <br>
+                        <div class="formulario__agregar">
+                          <img class="formulario__img" src="img/add.png">
+                          <strong>Agregar paso</strong>
+                        </div>
+                        <br>
+                        <div>
+                            <label class= "formulario__label" for="email">¿Para cuántas porciones rinde tu receta?</label>
+                            <select>
+                            <option selected>Seleccioná el número de porciones</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            </select>
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <label class="formulario__boton">Podés subir una foto de tu receta acá</label>
+                            <input class="formulario__input" type="file">    
+                        </div>
+                        <br>
+                        <br>
+                      </div>  
+                        <div>
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck"> 
+                              Estoy de acuerdo con los<a href="terminosycondiciones.html"> términos y condiciones</a>
+                            </label>                            
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-md-3 col-sm-6 col-12 boton_enviarBorrar">
+                          <button class="formulario__boton2" type="submit" value="Enviar">Enviar</button>
+                          <button class="formulario__boton2" type="reset" value="Borrar">Borrar</button>
+                        </div>
+                    </form>
+                </div>
             </main>
             <footer>
               <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
