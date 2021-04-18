@@ -216,7 +216,7 @@ footer .socialMedia img {
   background-color: lightpink;
   border-radius: 5px;
   border: 1px solid hotpink;
-  padding: 0.5em;
+  padding: 1rem;
 }
 
 .formulario input {
@@ -330,7 +330,9 @@ footer .socialMedia img {
       grid-template-rows: 10% 45% 45%;
   grid-column-gap: 2px;
   grid-row-gap: 1px;
-      grid-template-areas: "domingo lunes martes miércoles jueves viernes sábado" "aDomingo aLunes aMartes aMiércoles aJueves aViernes aSábado" "cDomingo cLunes cMartes cMiércoles cJueves cViernes cSábado";
+      grid-template-areas: "domingo lunes martes miércoles jueves viernes sábado"
+ "aDomingo aLunes aMartes aMiércoles aJueves aViernes aSábado"
+ "cDomingo cLunes cMartes cMiércoles cJueves cViernes cSábado";
   padding: 8px;
   width: 99.9%;
   background-color: #EFDFE9;
