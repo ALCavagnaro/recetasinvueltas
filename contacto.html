@@ -54,6 +54,7 @@
     </header>
         <br>
         <br>
+        <h2>Podés escribirnos</h2>
         <main>
             <div class="formulario">
                 <form action= "contacto.jss" method="get">
@@ -74,22 +75,23 @@
                         <option value="Uruguay">Uruguay</option>
                         <option value="Otro">Otro</option>
                     </select>
+                    
                     <br>
                     <br>
                 
-                    <label for="mensaje">Dejá tu mensaje</label>
-                    <input type="text" name="mensaje" minlength="5" maxlength="200" placeholder="Máx. 200 caracteres" required/>  
+                    <label class= "formulario__label" for="email">Dejanos tu mensaje</label>
+                    <textarea class="formulario__input--pasos" type="text" placeholder="Max. 200 caracteres" maxlength="200"></textarea>
                     <br>
                     <br> 
                 
-                    <div>Quiero recibir el Newsletter</div>
+                    <div class="check__input">Quiero recibir el Newsletter</div>
                     <input type="checkbox" name="acepta" value="1" />
                     <br>
                     <br>
-            
-                    <button class="formulario__boton" type="submit" value="Enviar">Enviar</button>
-                    <button class="formulario__boton" type="reset" value="Borrar">Borrar</button>
-
+                    <div class= "col-md-3 col-sm-6 col-12 boton_enviarBorrar">
+                      <button class="formulario__boton" type="submit" value="Enviar">Enviar</button>
+                      <button class="formulario__boton" type="reset" value="Borrar">Borrar</button>
+                    </div>
                 </form>
             </div>
         </main>

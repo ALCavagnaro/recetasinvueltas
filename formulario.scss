@@ -162,6 +162,7 @@ h2{text-align: center;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                flex-wrap: wrap;
             }
 
             .check__input {
