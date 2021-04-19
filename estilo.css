@@ -300,7 +300,7 @@ footer .socialMedia img {
   width: 2rem;
   height: 2rem;
   padding: 0.1rem;
-  margin: 1rem;
+  margin: 5rem;
 }
 
 @media only screen and (max-width: 400px) {
@@ -355,16 +355,40 @@ footer .socialMedia img {
   }
 }
 
-/*general*/
-/*imagen*/
-/*título de las fotos en pág principal*/
-/*h2*/
-/*botón1*/
-/*botón2*/
-/*acordion*/
-/*footer*/
-/*Grid*/
-/*404*/
+.formulario {
+  background-color: cornsilk;
+  border: solid 1px #564D3F;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.formulario form {
+  text-align: left;
+  padding: 20px;
+  margin: 2rem;
+}
+
+.formulario .formulario__form--boton {
+  background-color: lightpink;
+  border-radius: 5px;
+  border: 1px solid hotpink;
+  padding: 1rem;
+}
+
+.formulario input {
+  border-radius: 5px;
+  padding: 0.1rem;
+}
+
+.formulario select {
+  border-radius: 5px;
+  padding: 0.1rem;
+  border-color: pink;
+}
+
 .fotoReceta {
   width: 300px;
   height: 200px;
@@ -544,7 +568,9 @@ h3 {
       grid-template-rows: 10% 45% 45%;
   grid-column-gap: 2px;
   grid-row-gap: 1px;
-      grid-template-areas: "domingo lunes martes miércoles jueves viernes sábado" "aDomingo aLunes aMartes aMiércoles aJueves aViernes aSábado" "cDomingo cLunes cMartes cMiércoles cJueves cViernes cSábado";
+      grid-template-areas: "domingo lunes martes miércoles jueves viernes sábado"
+ "aDomingo aLunes aMartes aMiércoles aJueves aViernes aSábado"
+ "cDomingo cLunes cMartes cMiércoles cJueves cViernes cSábado";
   padding: 8px;
   width: 99.9%;
   background-color: #EFDFE9;
@@ -716,7 +742,27 @@ h3 {
         grid-template-rows: repeat(21, 1fr);
     grid-column-gap: 2px;
     grid-row-gap: 1px;
-        grid-template-areas: "domingo" "aDomingo" "cDomingo"  "lunes" "aLunes" "cLunes"  "martes" "aMartes" "cMartes"  "miércoles" "aMiércoles" "cMiércoles"  "jueves" "aJueves" "cJueves"  "viernes" "aViernes" "cViernes"  "sábado" "aSábado" "cSábado";
+        grid-template-areas: "domingo"
+ "aDomingo"
+ "cDomingo" 
+ "lunes"
+ "aLunes"
+ "cLunes" 
+ "martes"
+ "aMartes"
+ "cMartes" 
+ "miércoles"
+ "aMiércoles"
+ "cMiércoles" 
+ "jueves"
+ "aJueves"
+ "cJueves" 
+ "viernes"
+ "aViernes"
+ "cViernes" 
+ "sábado"
+ "aSábado"
+ "cSábado";
   }
 }
 
@@ -731,7 +777,27 @@ h3 {
         grid-template-rows: repeat(21, 1fr);
     grid-column-gap: 2px;
     grid-row-gap: 1px;
-        grid-template-areas: "domingo" "aDomingo" "cDomingo"  "lunes" "aLunes" "cLunes"  "martes" "aMartes" "cMartes"  "miércoles" "aMiércoles" "cMiércoles"  "jueves" "aJueves" "cJueves"  "viernes" "aViernes" "cViernes"  "sábado" "aSábado" "cSábado";
+        grid-template-areas: "domingo"
+ "aDomingo"
+ "cDomingo" 
+ "lunes"
+ "aLunes"
+ "cLunes" 
+ "martes"
+ "aMartes"
+ "cMartes" 
+ "miércoles"
+ "aMiércoles"
+ "cMiércoles" 
+ "jueves"
+ "aJueves"
+ "cJueves" 
+ "viernes"
+ "aViernes"
+ "cViernes" 
+ "sábado"
+ "aSábado"
+ "cSábado";
   }
 }
 
