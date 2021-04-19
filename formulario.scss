@@ -4,6 +4,7 @@
 
 h2{text-align: center;
    padding:3rem;
+   margin: auto;
 }
 
 .contenido{
@@ -134,12 +135,21 @@ h2{text-align: center;
     @media only screen and (max-width: 400px){                   /*celular*/
         .formulario {width: 100%;
         
-        .formulario__input, .formulario__input--ingrediente, .formulario__input--pasos { 
+        .formulario__input, .formulario__input--ingrediente, .formulario__input--pasos, select { 
             
-            width: 200%;
-          
-        
+            width: 100%;
         }
 
+        label{text-align: center;}
+
         }
+
+        .formulario__label{
+            padding: 1%;
+            font-size: 110%;
+            margin: 1%;
+            width: 100%;
+            text-align: center;
+            }
+
     }

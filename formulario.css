@@ -29,6 +29,7 @@
 h2 {
   text-align: center;
   padding: 3rem;
+  margin: auto;
 }
 
 .contenido {
@@ -171,8 +172,18 @@ h2 {
   .formulario {
     width: 100%;
   }
-  .formulario .formulario__input, .formulario .formulario__input--ingrediente, .formulario .formulario__input--pasos {
-    width: 200%;
+  .formulario .formulario__input, .formulario .formulario__input--ingrediente, .formulario .formulario__input--pasos, .formulario select {
+    width: 100%;
+  }
+  .formulario label {
+    text-align: center;
+  }
+  .formulario__label {
+    padding: 1%;
+    font-size: 110%;
+    margin: 1%;
+    width: 100%;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=formulario.css.map */
