@@ -75,4 +75,18 @@ h3 {
   font-size: 150%;
   margin: 1rem;
 }
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  /*tablet*/
+  .acordion {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /*celular*/
+  .acordion {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=acordeon.css.map */
