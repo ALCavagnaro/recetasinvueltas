@@ -117,3 +117,14 @@ h2{text-align: center;
         }
 
     }
+
+    @media only screen and (min-width: 401px) and (max-width: 960px) {                /*tablet*/
+       
+        .formulario{width: 60%+20%;}
+
+
+    } 
+
+    @media only screen and (max-width: 400px){
+        .formulario {width: 100%;}
+    } /*celular*/
