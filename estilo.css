@@ -173,7 +173,7 @@ h2 {
     width: 100%;
   }
   .formulario .formulario__input, .formulario .formulario__input--ingrediente, .formulario .formulario__input--pasos {
-    width: 100%;
+    width: 200%;
   }
 }
 

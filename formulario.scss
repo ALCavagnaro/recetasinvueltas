@@ -134,7 +134,12 @@ h2{text-align: center;
     @media only screen and (max-width: 400px){                   /*celular*/
         .formulario {width: 100%;
         
-        .formulario__input, .formulario__input--ingrediente, .formulario__input--pasos { width: 100%;}
+        .formulario__input, .formulario__input--ingrediente, .formulario__input--pasos { 
+            
+            width: 200%;
+          
+        
+        }
 
         }
     }
