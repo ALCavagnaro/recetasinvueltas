@@ -172,16 +172,40 @@
   grid-area: sábado;
 }
 
-.error {
-  background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+/*.error {
+    background-color: $bg-error;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}*/
+@media only screen and (max-width: 400px) {
+  /*celular*/
+  .semana {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[21];
+        grid-template-rows: repeat(21, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 1px;
+        grid-template-areas: "domingo" "aDomingo" "cDomingo"  "lunes" "aLunes" "cLunes"  "martes" "aMartes" "cMartes"  "miércoles" "aMiércoles" "cMiércoles"  "jueves" "aJueves" "cJueves"  "viernes" "aViernes" "cViernes"  "sábado" "aSábado" "cSábado";
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  /*tablet*/
+  .semana {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[21];
+        grid-template-rows: repeat(21, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 1px;
+        grid-template-areas: "domingo" "aDomingo" "cDomingo"  "lunes" "aLunes" "cLunes"  "martes" "aMartes" "cMartes"  "miércoles" "aMiércoles" "cMiércoles"  "jueves" "aJueves" "cJueves"  "viernes" "aViernes" "cViernes"  "sábado" "aSábado" "cSábado";
+  }
 }
 /*# sourceMappingURL=grid.css.map */

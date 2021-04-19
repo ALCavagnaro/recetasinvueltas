@@ -1,25 +1,42 @@
 @import "variables";
+@import "botones";
+
+h3{
+    text-align: center;
+    padding: 3rem;
+}
 
 .acordion {                                                
-    background-color: $bg-ColorAcordion;
+    background-image: linear-gradient(to top, white, #fff6db);
     border: $border-secondary;
     border-radius: $border;
+    width:60%;
+    margin: auto;
 
-        .listaAcordion {
-            background-image: linear-gradient(to top, white, #fff6db);
-        
-         ul {
-             list-style: none;
-                li{
-                    opacity:1;
-                    font-family: $FontH2;
-                }             
-         }
+
+.acordion__boton1, .acordion__boton4, .acordion__boton7 {
+@include boton2 ($botonBorde, 99.9%, 5rem);
+@extend %boton;
+&:hover{background-color:grey;}
 }
 
+.acordion__boton2, .acordion__boton5, .acordion__boton8 {
+    @include boton2 ($botonBorde2, 99.9%, 5rem);
+    @extend %boton;
+    &:hover{background-color:grey;}
+    }
+
+.acordion__boton3, .acordion__boton6, .acordion__boton9 {
+    @include boton2 (rgb(230, 196, 134), 99.9%, 5rem);
+    @extend %boton;
+    &:hover{background-color:grey;}
+    }
+
+
+.acordion__p {
+    text-align: center;
+    font-size: 150%;
+    margin: 1rem;           
 }
 
-.tituloAcordion{
-    font-family: $FontH2;
-    font-weight: 800;
 }

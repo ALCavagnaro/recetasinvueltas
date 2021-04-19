@@ -6,3 +6,9 @@
     border: $botonBorde;
     padding: $botonPadding;
 }
+
+@mixin boton2 ($bg-color,$width,$height){
+    background-color:$bg-color;
+    width: $width;
+    height: $height;
+}

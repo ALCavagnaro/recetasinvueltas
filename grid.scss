@@ -143,10 +143,78 @@ font-weight: bold;
 } 
 
 
-.error {
+/*.error {
     background-color: $bg-error;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
+}*/
+
+@media only screen and (max-width: 400px) { /*celular*/
+
+    .semana {                                                           
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(21, 1fr);
+        grid-column-gap: 2px;
+        grid-row-gap: 1px; 
+        grid-template-areas: "domingo"
+                             "aDomingo"
+                             "cDomingo" 
+                             "lunes"
+                             "aLunes"
+                             "cLunes" 
+                             "martes"
+                             "aMartes"
+                             "cMartes" 
+                             "miércoles"
+                             "aMiércoles"
+                             "cMiércoles" 
+                             "jueves"
+                             "aJueves"
+                             "cJueves" 
+                             "viernes"
+                             "aViernes"
+                             "cViernes" 
+                             "sábado"
+                             "aSábado"
+                             "cSábado";
+    }
+
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px)  { /*tablet*/
+
+    .semana {                                                           
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(21, 1fr);
+        grid-column-gap: 2px;
+        grid-row-gap: 1px; 
+        grid-template-areas: "domingo"
+                             "aDomingo"
+                             "cDomingo" 
+                             "lunes"
+                             "aLunes"
+                             "cLunes" 
+                             "martes"
+                             "aMartes"
+                             "cMartes" 
+                             "miércoles"
+                             "aMiércoles"
+                             "cMiércoles" 
+                             "jueves"
+                             "aJueves"
+                             "cJueves" 
+                             "viernes"
+                             "aViernes"
+                             "cViernes" 
+                             "sábado"
+                             "aSábado"
+                             "cSábado";
+    }
+
 
 }
