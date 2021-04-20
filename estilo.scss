@@ -1,4 +1,4 @@
-/*@import"variables";*/
+/*@import"variables";
 @import "formulario";
 @import "galeria";
 @import "navegador";
@@ -7,8 +7,859 @@
 @import "body";
 @import "acordeon";
 @import "grid";
-@import "error";
+@import "error";*/
+
+
+/*general*/
+$color-bg:whitesmoke;
+$border:5px;
+$shadow: 0px 3px 10px -2px rgba(176,131,54,0.85);
+$color-primary: #e6b464;
+$iconoWidth: 5.5rem;
+/*imagen*/
+$imgRecetaAncho: 300px;
+$imgRecetaAlto: 200px;
+$imgPadding:2px;
+$imgOpacity:0.7;
+/*título de las fotos en pág principal*/
+$letraReceta: 'Roboto', sans-serif;
+$sizeLetraReceta: 1.6rem;
+$lugarNombreReceta:center;
+$colorNombreReceta:whitesmoke;
+/*h2*/
+$colorH2:#564D3F;
+$marginH2:10px;
+$paddingH2:0.7rem;
+$FontH2: 'Roboto', sans-serif;
+$SizeFontH2:1rem;
+$color-secondary:cornsilk;
+$border-secondary: solid 1px #564D3F;
+$opacity-secondary:0.7;
+$padding-secondary:20px;
+$margin-secondary:2rem;
+/*botón1*/
+$botonColor:lightpink;
+$botonBorde: whitesmoke solid 2px;
+$botonPadding:0.5em;
+/*botón2*/
+$botonColor2:#bbded6;
+$botonBorde2:#61c0bf;
+$botonPadding:0.5rem;
+/*acordion*/
+$bg-ColorAcordion:#fff6db;
+$bg-ColorAcordion-secondary: #836de6;
+$BorderAcordion:#836de6 solid 1px;
+/*footer*/
+$paddingFooter:0.1rem;
+$marginFooter:0.5rem;
+$fontFooter:'Noto Sans HK', sans-serif;
+$fontSizeFooter:1.1rem;
+$fontFooterColor:black;
+/*Grid*/
+$gridSize:14.27%;
+/*404*/
+$bg-error:black;
+
+* {
+    margin:0;
+    padding:0;
+
+}
+
+body {
+    background-color: $color-bg;
+}
+
+/*Navegador*/
+
+header {
+    border-radius: $border;
+    box-shadow: $shadow;
+    }
+
+main {
+    margin:10px;
+    padding-bottom:2rem;
+}
+
+%boton {
+    background-color: $botonColor;
+    border-radius: $border;
+    border: $botonBorde;
+    padding: $botonPadding;
+}
+
+nav {                                        
+    background-color: $color-primary;
     
+    .boton {
+        @extend%boton;
+    }
+}
+
+.icono{                                     
+    
+    width: $iconoWidth;
+    
+    img { 
+        
+        width: 100%;
+        height: 100%;
+        padding:0.5rem;
+    }
+
+ }
+
+ /*Botones en gral. de todo el sitio*/
+
+
+ %boton {
+    background-color: $botonColor;
+    border-radius: $border;
+    border: $botonBorde;
+    padding: $botonPadding;
+}
+
+@mixin boton2 ($bg-color,$width,$height){
+    background-color:$bg-color;
+    width: $width;
+    height: $height;
+}
+
+
+/*INDEX del sitio.*/
+
+.galeria {                               
+                        
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+    .galeriaRecetas{                           
+
+        width:$imgRecetaAncho;
+        height:$imgRecetaAlto;
+
+    img {
+        border-radius:$border;
+        width:$imgRecetaAncho;
+        height:$imgRecetaAlto;
+        padding: $imgPadding;
+        &:hover{ opacity:$imgOpacity}
+    }
+
+
+    a {
+        text-decoration: none;
+        color:black;
+        position: initial;
+        transform: translate(1%, -300%);
+ 
+    .nombreReceta {
+        font-family: $letraReceta;
+        text-align: $lugarNombreReceta;
+        font-size: $sizeLetraReceta;
+        color: $colorNombreReceta;
+        font-weight: 700;
+        position: initial;
+        transform: translate(1%, -300%);
+        opacity:0;
+
+    &:hover{  opacity:1;
+              text-shadow: 2px 0 0 grey, -2px 0 0 grey, 0 2px 0 grey, 0 -2px 0 grey, 1px 1px grey, -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey;
+            }
+                
+        }
+
+      }
+
+    }
+ }
+
+ h3{
+    text-align: center;
+    padding: 3rem;
+}
+
+
+/*afecta a las recetas individuales y a la pag. de info gral*/
+.acordion {                                                
+    background-image: linear-gradient(to top, white, #fff6db);
+    border: $border-secondary;
+    border-radius: $border;
+    width:60%;
+    margin: auto;
+
+
+.acordion__boton1, .acordion__boton4, .acordion__boton7 {
+@include boton2 ($botonBorde, 99.9%, 5rem);
+@extend %boton;
+&:hover{background-color:grey;}
+}
+
+.acordion__boton2, .acordion__boton5, .acordion__boton8 {
+    @include boton2 ($botonBorde2, 99.9%, 5rem);
+    @extend %boton;
+    &:hover{background-color:grey;}
+    }
+
+.acordion__boton3, .acordion__boton6, .acordion__boton9 {
+    @include boton2 (rgb(230, 196, 134), 99.9%, 5rem);
+    @extend %boton;
+    &:hover{background-color:grey;}
+    }
+
+
+.acordion__p {
+    text-align: center;
+    font-size: 150%;
+    margin: 1rem;           
+}
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {                /*tablet*/
+
+    .acordion {                                                
+        
+        width:100%;
+       
+
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 400px){                   /*celular*/
+
+    .acordion {                                                
+        
+        width:100%;
+       
+
+}
+
+}
+
+/*Para poágina 404*/
+
+
+.body__error{
+
+    background-color: rgb(17, 16, 16);
+}
+
+.error{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+
+.error__titulo{
+    color:rgb(155, 148, 148);
+    font-size: 300%;
+    padding:5rem;
+    margin: auto;
+    text-align: center;
+}
+
+.error__icono {
+    width:50%;
+    height:50%;
+    padding: $imgPadding;
+    align-self: center;
+    justify-self: center;
+    align-content: space-evenly;
+    
+    
+      
+         img {
+                width:60%;
+                height:60%;
+                align-self: center;
+                justify-self: center;
+                align-content: center;
+                margin-left: 20%;
+                margin-right: 20%;
+                    
+              }
+            
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px){  /*tablet*/
+    .error__titulo{
+        
+        font-size: 100%;
+        
+    }
+}
+
+@media only screen and (max-width: 400px){       /*celular*/
+
+    .error__titulo{
+        
+        font-size: 80%;
+        
+    }
+}
+
+
+/*formulario: afecta al ingreso de receta y al contacto*/
+
+h2{text-align: center;
+    padding:3rem;
+    margin: auto;
+ }
+ 
+ .contenido{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ 
+ .formulario {               
+     /*background-color: $color-bg; Analizar si queda mejor*/
+     background-image: linear-gradient(to top, white, #fff6db);
+     border-radius: $border;                 
+     margin: auto;
+     padding: 4.5rem;
+     width: 60%;
+   
+     .formulario__label{
+                padding: $paddingH2;
+                font-size: 110%;
+                margin: 1%;
+                width: 100%;
+                }
+ 
+            .formulario__input{
+             background-color: white;
+             color:$botonBorde;
+             border:3px solid $botonBorde2;
+             border-radius: $border;
+             height: 3rem;
+             width: 40%;
+             margin: $marginH2;
+             float: center;
+                }
+ 
+             .formulario__input--ingrediente{
+                 background-color: white;
+                 color:$botonBorde;
+                 border:3px solid pink;
+                 border-radius: $border;
+                 height: 3rem;
+                 width: 80%;
+                 margin: $marginH2;     
+                 }
+ 
+             .formulario__input--pasos{
+             background-color: white;
+             color:$botonBorde;
+             border:3px solid rgb(230, 196, 134);
+             border-radius: $border;
+             height: 5rem;
+             width: 80%;
+             margin: $marginH2;
+             }
+ 
+            .formulario__boton--ingrediente{
+             background-color: pink;
+             border-radius: $border;
+             border: 1px solid rgb(233, 183, 229);
+             padding: $botonPadding;
+             font-family: $FontH2;
+             color:white;
+             width:3rem;
+            }
+ 
+            .formulario__boton{
+ 
+             background-color: $botonColor2;
+             border-radius: $border;
+             border: 1px solid $botonBorde2;
+             padding: $botonPadding;
+             font-family: $FontH2;
+             color:rgb(75, 71, 71);
+         
+         }
+ 
+         .formulario__img {
+             width:3rem;
+             height: 3rem;
+             &:hover{background-color: paleturquoise;}
+             
+         }
+ 
+         .formulario__agregar{
+             display:flex;
+             flex-direction: row;
+             justify-content: start;
+             cursor:pointer;
+             strong
+                 {padding-left:2rem;
+                 padding-top:1rem; 
+                 }
+ 
+             }
+         select{
+             background-color: $botonColor2;
+             border-radius: $border;
+             border: 1px solid $botonBorde2;
+             padding: $botonPadding;
+             font-family: $FontH2;
+             color:rgb(75, 71, 71);
+         }
+ 
+ 
+         .formulario__boton2{
+         @extend%boton;
+         float: right;
+         }
+ 
+         .boton_enviarBorrar{
+             float: right;
+         }
+ 
+     }
+ 
+     @media only screen and (min-width: 401px) and (max-width: 960px) {                /*tablet*/
+        
+         .formulario{width: 60%+20%;
+         
+             .formulario__input, .formulario__input--ingrediente, select { 
+                 width: 90%;
+             }
+ 
+             .formulario__input--pasos {
+                 width: 100%;
+                 height: 10rem;
+             }
+             .boton_enviarBorrar {
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: space-between;
+                 flex-wrap: wrap;
+             }
+ 
+             .check__input {
+                 display: flex;
+                 flex-direction: row;
+             }
+ 
+     }
+     
+     
+     }
+ 
+         
+ 
+ 
+     
+ 
+     @media only screen and (max-width: 400px){                   /*celular*/
+         .formulario {width: 100%;
+         
+         .formulario__input, .formulario__input--ingrediente, select { 
+             
+             width: 100%;
+         }
+         .formulario__input--pasos {
+             width: 100%;
+             height: 12rem;
+         }
+ 
+ 
+ 
+         label, strong {text-align: center;}
+ 
+         }
+ 
+         .formulario__label{
+             padding: 1%;
+             font-size: 110%;
+             margin: 1%;
+             width: 100%;
+             text-align: center;
+             }
+ 
+             .boton_enviarBorrar {
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: space-between;
+                 flex-wrap: wrap;
+             }
+ 
+             .check__input {
+                 display: flex;
+                 flex-direction: row;
+             }
+ 
+     }
+
+
+/*El grid es para "Mi semana" */
+
+.semana {                                                           
+    display:grid;
+    grid-template-columns: repeat(7, $gridSize);
+    grid-template-rows: 10% 45% 45%;
+    grid-column-gap: 2px;
+    grid-row-gap: 1px; 
+    grid-template-areas: "domingo lunes martes miércoles jueves viernes sábado"
+                         "aDomingo aLunes aMartes aMiércoles aJueves aViernes aSábado"
+                         "cDomingo cLunes cMartes cMiércoles cJueves cViernes cSábado";
+    padding:8px;
+    width: 99.9%;
+    background-color: #EFDFE9;
+    margin:auto;
+    border:$border-secondary;
+    border-radius: $border;
+}
+
+
+.nada1 {
+
+    grid-area:aDomingo;
+    
+}
+
+.nada2{
+    grid-area:aLunes;
+}   
+
+.nada3{
+    grid-area:aMartes;
+    
+}
+
+.nada4 {
+    grid-area:aMiércoles;
+    
+}
+
+.nada5 {
+    grid-area:aJueves;
+    
+}
+
+.nada6 {
+    grid-area:aViernes;
+    
+}
+
+.nada7 {
+    grid-area:aSábado;
+    
+}
+
+.nada8 {
+    grid-area:cDomingo;
+    
+}
+
+.nada9 {
+    grid-area:cLunes;
+    
+}
+.nada10{
+    grid-area:cMartes;
+    
+}
+.nada11{
+    grid-area:cMiércoles;
+    
+}
+.nada12{
+    grid-area:cJueves;
+    
+}
+.nada13{
+    grid-area:cViernes;
+    
+}
+.nada14{
+    grid-area:cSábado;
+}
+
+%header {
+padding:0.5rem;
+margin: 1rem;
+text-align: center;
+align-self: center;
+font-family: $FontH2;
+font-size: $SizeFontH2;
+font-weight: bold;
+}
+
+.comida{
+@extend%header;
+}
+
+.completar{
+    @extend%header;
+    background-color: $color-primary;
+    border-radius: $border;
+    border: white solid 2px;
+    padding: $botonPadding;
+}
+
+.domingo{
+    grid-area: domingo;
+    @extend%header;
+}
+
+.lunes{
+    grid-area: lunes;
+    @extend%header;
+}
+
+.martes{
+    grid-area: martes;
+    @extend%header;
+    
+}
+
+.miércoles{
+    grid-area: miércoles;
+    @extend%header;
+
+}
+
+.jueves{ 
+    grid-area: jueves;
+    @extend%header;
+}
+
+.viernes{
+
+    grid-area: viernes;
+    @extend%header;
+}
+
+.sábado{
+    grid-area: sábado;
+    @extend%header;
+} 
+
+
+@media only screen and (max-width: 400px) { /*celular*/
+
+    .semana {                                                           
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(21, 1fr);
+        grid-column-gap: 2px;
+        grid-row-gap: 1px; 
+        grid-template-areas: "domingo"
+                             "aDomingo"
+                             "cDomingo" 
+                             "lunes"
+                             "aLunes"
+                             "cLunes" 
+                             "martes"
+                             "aMartes"
+                             "cMartes" 
+                             "miércoles"
+                             "aMiércoles"
+                             "cMiércoles" 
+                             "jueves"
+                             "aJueves"
+                             "cJueves" 
+                             "viernes"
+                             "aViernes"
+                             "cViernes" 
+                             "sábado"
+                             "aSábado"
+                             "cSábado";
+    }
+
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px)  { /*tablet*/
+
+    .semana {                                                           
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(21, 1fr);
+        grid-column-gap: 2px;
+        grid-row-gap: 1px; 
+        grid-template-areas: "domingo"
+                             "aDomingo"
+                             "cDomingo" 
+                             "lunes"
+                             "aLunes"
+                             "cLunes" 
+                             "martes"
+                             "aMartes"
+                             "cMartes" 
+                             "miércoles"
+                             "aMiércoles"
+                             "cMiércoles" 
+                             "jueves"
+                             "aJueves"
+                             "cJueves" 
+                             "viernes"
+                             "aViernes"
+                             "cViernes" 
+                             "sábado"
+                             "aSábado"
+                             "cSábado";
+    }
+
+
+}
+
+/* Este código afecta a las recetas individuales*/
+
+.fotoReceta{
+    width:$imgRecetaAncho;
+    height:$imgRecetaAlto;
+    padding: $imgPadding;
+    margin: auto;
+          img {
+              border:$border-secondary;
+              
+          }
+}
+
+.ingredientes {                                             
+              background-color: $color-secondary;
+              border:$border-secondary;
+              border-radius: $border;
+              padding:$paddingH2;
+              margin: $marginH2;
+          
+              h2 {
+                background-color: $botonColor;
+                border-radius: $border;
+                border: $botonBorde;
+                padding: $botonPadding;
+                width: fit-content;
+              }
+              
+
+          li {
+              font-family:$FontH2;
+              font-size: $SizeFontH2;
+              padding: $paddingH2;
+             
+
+}
+
+}
+
+.pasos {                                             
+    background-color: $color-secondary;
+    border:$border-secondary;
+    border-radius: $border;
+    padding:$paddingH2;
+    margin: $marginH2;
+
+    h2 {
+        background-color: $botonColor;
+        border-radius: $border;
+        border: $botonBorde;
+        padding: $botonPadding;
+        width:fit-content;
+      }
+    
+
+li {
+    font-family:$FontH2;
+    font-size: $SizeFontH2;
+    padding: $paddingH2;
+   
+
+}
+
+}
+
+/*Estilo del footer*/
+
+footer {                                              
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+       p { font-family: $fontFooter;
+             font-size: $fontSizeFooter;
+             color: $fontFooterColor;
+             padding: $paddingFooter;
+             text-align: center;
+             
+         }
+
+        .socialMedia {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;  
+
+                    img { 
+                    
+                    width: 2rem;
+                    height: 2rem;
+                    padding: $paddingFooter;
+                    margin:$marginFooter;
+                    
+                }
+
+        }
+
+
+
+}
+
+
+@media only screen and (max-width: 400px) { /*celular*/
+
+    footer {                                              
+        background-color: $color-primary;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        p{                                  
+            font-size: 1rem;
+        }
+
+        img {
+            width:0.7rem;
+            height:0.7rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px)  { /*tablet*/
+
+    footer {                                              
+        background-color: $color-primary;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    
+    p {                                    
+        font-size: 1rem;
+    }
+
+    img {
+        width:1rem;
+        height:1rem;
+    }
+    
+}
+
+}
+
 
 
 

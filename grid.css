@@ -1,211 +1,0 @@
-@charset "UTF-8";
-/*general*/
-/*imagen*/
-/*título de las fotos en pág principal*/
-/*h2*/
-/*botón1*/
-/*botón2*/
-/*acordion*/
-/*footer*/
-/*Grid*/
-/*404*/
-.semana {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (14.27%)[7];
-      grid-template-columns: repeat(7, 14.27%);
-  -ms-grid-rows: 10% 45% 45%;
-      grid-template-rows: 10% 45% 45%;
-  grid-column-gap: 2px;
-  grid-row-gap: 1px;
-      grid-template-areas: "domingo lunes martes miércoles jueves viernes sábado" "aDomingo aLunes aMartes aMiércoles aJueves aViernes aSábado" "cDomingo cLunes cMartes cMiércoles cJueves cViernes cSábado";
-  padding: 8px;
-  width: 99.9%;
-  background-color: #EFDFE9;
-  margin: auto;
-  border: solid 1px #564D3F;
-  border-radius: 5px;
-}
-
-.nada1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: aDomingo;
-}
-
-.nada2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: aLunes;
-}
-
-.nada3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: aMartes;
-}
-
-.nada4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
-  grid-area: aMiércoles;
-}
-
-.nada5 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 5;
-  grid-area: aJueves;
-}
-
-.nada6 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 6;
-  grid-area: aViernes;
-}
-
-.nada7 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 7;
-  grid-area: aSábado;
-}
-
-.nada8 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: cDomingo;
-}
-
-.nada9 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: cLunes;
-}
-
-.nada10 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: cMartes;
-}
-
-.nada11 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 4;
-  grid-area: cMiércoles;
-}
-
-.nada12 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-  grid-area: cJueves;
-}
-
-.nada13 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 6;
-  grid-area: cViernes;
-}
-
-.nada14 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 7;
-  grid-area: cSábado;
-}
-
-.comida, .completar, .domingo, .lunes, .martes, .miércoles, .jueves, .viernes, .sábado {
-  padding: 0.5rem;
-  margin: 1rem;
-  text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.completar {
-  background-color: #e6b464;
-  border-radius: 5px;
-  border: white solid 2px;
-  padding: 0.5rem;
-}
-
-.domingo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: domingo;
-}
-
-.lunes {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: lunes;
-}
-
-.martes {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: martes;
-}
-
-.miércoles {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: miércoles;
-}
-
-.jueves {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  grid-area: jueves;
-}
-
-.viernes {
-  -ms-grid-row: 1;
-  -ms-grid-column: 6;
-  grid-area: viernes;
-}
-
-.sábado {
-  -ms-grid-row: 1;
-  -ms-grid-column: 7;
-  grid-area: sábado;
-}
-
-/*.error {
-    background-color: $bg-error;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-}*/
-@media only screen and (max-width: 400px) {
-  /*celular*/
-  .semana {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[21];
-        grid-template-rows: repeat(21, 1fr);
-    grid-column-gap: 2px;
-    grid-row-gap: 1px;
-        grid-template-areas: "domingo" "aDomingo" "cDomingo"  "lunes" "aLunes" "cLunes"  "martes" "aMartes" "cMartes"  "miércoles" "aMiércoles" "cMiércoles"  "jueves" "aJueves" "cJueves"  "viernes" "aViernes" "cViernes"  "sábado" "aSábado" "cSábado";
-  }
-}
-
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  /*tablet*/
-  .semana {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[21];
-        grid-template-rows: repeat(21, 1fr);
-    grid-column-gap: 2px;
-    grid-row-gap: 1px;
-        grid-template-areas: "domingo" "aDomingo" "cDomingo"  "lunes" "aLunes" "cLunes"  "martes" "aMartes" "cMartes"  "miércoles" "aMiércoles" "cMiércoles"  "jueves" "aJueves" "cJueves"  "viernes" "aViernes" "cViernes"  "sábado" "aSábado" "cSábado";
-  }
-}
-/*# sourceMappingURL=grid.css.map */

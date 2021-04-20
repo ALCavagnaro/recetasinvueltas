@@ -1,5 +1,14 @@
 @charset "UTF-8";
-/*@import"variables";*/
+/*@import"variables";
+@import "formulario";
+@import "galeria";
+@import "navegador";
+@import "footer";   
+@import "receta";
+@import "body";
+@import "acordeon";
+@import "grid";
+@import "error";*/
 /*general*/
 /*imagen*/
 /*título de las fotos en pág principal*/
@@ -10,23 +19,239 @@
 /*footer*/
 /*Grid*/
 /*404*/
-/*general*/
-/*imagen*/
-/*título de las fotos en pág principal*/
-/*h2*/
-/*botón1*/
-/*botón2*/
-/*acordion*/
-/*footer*/
-/*Grid*/
-/*404*/
-.formulario .formulario__boton2, nav .boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9 {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+/*Navegador*/
+header {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 10px -2px rgba(176, 131, 54, 0.85);
+          box-shadow: 0px 3px 10px -2px rgba(176, 131, 54, 0.85);
+}
+
+main {
+  margin: 10px;
+  padding-bottom: 2rem;
+}
+
+nav .boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .formulario .formulario__boton2 {
   background-color: lightpink;
   border-radius: 5px;
   border: whitesmoke solid 2px;
   padding: 0.5rem;
 }
 
+nav {
+  background-color: #e6b464;
+}
+
+.icono {
+  width: 5.5rem;
+}
+
+.icono img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+/*Botones en gral. de todo el sitio*/
+nav .boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .formulario .formulario__boton2 {
+  background-color: lightpink;
+  border-radius: 5px;
+  border: whitesmoke solid 2px;
+  padding: 0.5rem;
+}
+
+/*INDEX del sitio.*/
+.galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.galeria .galeriaRecetas {
+  width: 300px;
+  height: 200px;
+}
+
+.galeria .galeriaRecetas img {
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
+  padding: 2px;
+}
+
+.galeria .galeriaRecetas img:hover {
+  opacity: 0.7;
+}
+
+.galeria .galeriaRecetas a {
+  text-decoration: none;
+  color: black;
+  position: initial;
+  -webkit-transform: translate(1%, -300%);
+          transform: translate(1%, -300%);
+}
+
+.galeria .galeriaRecetas a .nombreReceta {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 1.6rem;
+  color: whitesmoke;
+  font-weight: 700;
+  position: initial;
+  -webkit-transform: translate(1%, -300%);
+          transform: translate(1%, -300%);
+  opacity: 0;
+}
+
+.galeria .galeriaRecetas a .nombreReceta:hover {
+  opacity: 1;
+  text-shadow: 2px 0 0 grey, -2px 0 0 grey, 0 2px 0 grey, 0 -2px 0 grey, 1px 1px grey, -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey;
+}
+
+h3 {
+  text-align: center;
+  padding: 3rem;
+}
+
+/*afecta a las recetas individuales y a la pag. de info gral*/
+.acordion {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(#fff6db));
+  background-image: linear-gradient(to top, white, #fff6db);
+  border: solid 1px #564D3F;
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
+}
+
+.acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7 {
+  background-color: whitesmoke solid 2px;
+  width: 99.9%;
+  height: 5rem;
+}
+
+.acordion .acordion__boton1:hover, .acordion .acordion__boton4:hover, .acordion .acordion__boton7:hover {
+  background-color: grey;
+}
+
+.acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8 {
+  background-color: #61c0bf;
+  width: 99.9%;
+  height: 5rem;
+}
+
+.acordion .acordion__boton2:hover, .acordion .acordion__boton5:hover, .acordion .acordion__boton8:hover {
+  background-color: grey;
+}
+
+.acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9 {
+  background-color: #e6c486;
+  width: 99.9%;
+  height: 5rem;
+}
+
+.acordion .acordion__boton3:hover, .acordion .acordion__boton6:hover, .acordion .acordion__boton9:hover {
+  background-color: grey;
+}
+
+.acordion .acordion__p {
+  text-align: center;
+  font-size: 150%;
+  margin: 1rem;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  /*tablet*/
+  .acordion {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /*celular*/
+  .acordion {
+    width: 100%;
+  }
+}
+
+/*Para poágina 404*/
+.body__error {
+  background-color: #111010;
+}
+
+.error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.error__titulo {
+  color: #9b9494;
+  font-size: 300%;
+  padding: 5rem;
+  margin: auto;
+  text-align: center;
+}
+
+.error__icono {
+  width: 50%;
+  height: 50%;
+  padding: 2px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+.error__icono img {
+  width: 60%;
+  height: 60%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  /*tablet*/
+  .error__titulo {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /*celular*/
+  .error__titulo {
+    font-size: 80%;
+  }
+}
+
+/*formulario: afecta al ingreso de receta y al contacto*/
 h2 {
   text-align: center;
   padding: 3rem;
@@ -242,393 +467,7 @@ h2 {
   }
 }
 
-.galeria {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.galeria .galeriaRecetas {
-  width: 300px;
-  height: 200px;
-}
-
-.galeria .galeriaRecetas img {
-  border-radius: 5px;
-  width: 300px;
-  height: 200px;
-  padding: 2px;
-}
-
-.galeria .galeriaRecetas img:hover {
-  opacity: 0.7;
-}
-
-.galeria .galeriaRecetas a {
-  text-decoration: none;
-  color: black;
-  position: initial;
-  -webkit-transform: translate(1%, -300%);
-          transform: translate(1%, -300%);
-}
-
-.galeria .galeriaRecetas a .nombreReceta {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  font-size: 1.6rem;
-  color: whitesmoke;
-  font-weight: 700;
-  position: initial;
-  -webkit-transform: translate(1%, -300%);
-          transform: translate(1%, -300%);
-  opacity: 0;
-}
-
-.galeria .galeriaRecetas a .nombreReceta:hover {
-  opacity: 1;
-  text-shadow: 2px 0 0 grey, -2px 0 0 grey, 0 2px 0 grey, 0 -2px 0 grey, 1px 1px grey, -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey;
-}
-
-/*general*/
-/*imagen*/
-/*título de las fotos en pág principal*/
-/*h2*/
-/*botón1*/
-/*botón2*/
-/*acordion*/
-/*footer*/
-/*Grid*/
-/*404*/
-header {
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 3px 10px -2px rgba(176, 131, 54, 0.85);
-          box-shadow: 0px 3px 10px -2px rgba(176, 131, 54, 0.85);
-}
-
-main {
-  margin: 10px;
-  padding-bottom: 2rem;
-}
-
-.formulario .formulario__boton2, nav .boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9 {
-  background-color: lightpink;
-  border-radius: 5px;
-  border: whitesmoke solid 2px;
-  padding: 0.5rem;
-}
-
-nav {
-  background-color: #e6b464;
-}
-
-.icono {
-  width: 5.5rem;
-}
-
-.icono img {
-  width: 100%;
-  height: 100%;
-  padding: 0.5rem;
-}
-
-/*general*/
-/*imagen*/
-/*título de las fotos en pág principal*/
-/*h2*/
-/*botón1*/
-/*botón2*/
-/*acordion*/
-/*footer*/
-/*Grid*/
-/*404*/
-footer {
-  background-color: #e6b464;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer p {
-  font-family: "Noto Sans HK", sans-serif;
-  font-size: 0.8rem;
-  color: black;
-  padding: 0.1rem;
-  text-align: center;
-}
-
-footer .socialMedia {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-footer .socialMedia img {
-  width: 2rem;
-  height: 2rem;
-  padding: 0.1rem;
-  margin: 0.5rem;
-}
-
-@media only screen and (max-width: 400px) {
-  /*celular*/
-  footer {
-    background-color: #e6b464;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer p {
-    font-size: 0.5rem;
-  }
-  footer img {
-    width: 0.7rem;
-    height: 0.7rem;
-  }
-}
-
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  /*tablet*/
-  footer {
-    background-color: #e6b464;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer p {
-    font-size: 0.7rem;
-  }
-  footer img {
-    width: 1rem;
-    height: 1rem;
-  }
-}
-
-/*general*/
-/*imagen*/
-/*título de las fotos en pág principal*/
-/*h2*/
-/*botón1*/
-/*botón2*/
-/*acordion*/
-/*footer*/
-/*Grid*/
-/*404*/
-.fotoReceta {
-  width: 300px;
-  height: 200px;
-  padding: 2px;
-  margin: auto;
-}
-
-.fotoReceta img {
-  border: solid 1px #564D3F;
-}
-
-.ingredientes {
-  background-color: cornsilk;
-  border: solid 1px #564D3F;
-  border-radius: 5px;
-  padding: 0.7rem;
-  margin: 10px;
-}
-
-.ingredientes h2 {
-  background-color: lightpink;
-  border-radius: 5px;
-  border: whitesmoke solid 2px;
-  padding: 0.5rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.ingredientes li {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  padding: 0.7rem;
-}
-
-.pasos {
-  background-color: cornsilk;
-  border: solid 1px #564D3F;
-  border-radius: 5px;
-  padding: 0.7rem;
-  margin: 10px;
-}
-
-.pasos h2 {
-  background-color: lightpink;
-  border-radius: 5px;
-  border: whitesmoke solid 2px;
-  padding: 0.5rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.pasos li {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  padding: 0.7rem;
-}
-
-/*general*/
-/*imagen*/
-/*título de las fotos en pág principal*/
-/*h2*/
-/*botón1*/
-/*botón2*/
-/*acordion*/
-/*footer*/
-/*Grid*/
-/*404*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: whitesmoke;
-}
-
-/*general*/
-/*imagen*/
-/*título de las fotos en pág principal*/
-/*h2*/
-/*botón1*/
-/*botón2*/
-/*acordion*/
-/*footer*/
-/*Grid*/
-/*404*/
-/*general*/
-/*imagen*/
-/*título de las fotos en pág principal*/
-/*h2*/
-/*botón1*/
-/*botón2*/
-/*acordion*/
-/*footer*/
-/*Grid*/
-/*404*/
-.formulario .formulario__boton2, nav .boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9 {
-  background-color: lightpink;
-  border-radius: 5px;
-  border: whitesmoke solid 2px;
-  padding: 0.5rem;
-}
-
-h3 {
-  text-align: center;
-  padding: 3rem;
-}
-
-.acordion {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(#fff6db));
-  background-image: linear-gradient(to top, white, #fff6db);
-  border: solid 1px #564D3F;
-  border-radius: 5px;
-  width: 60%;
-  margin: auto;
-}
-
-.acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7 {
-  background-color: whitesmoke solid 2px;
-  width: 99.9%;
-  height: 5rem;
-}
-
-.acordion .acordion__boton1:hover, .acordion .acordion__boton4:hover, .acordion .acordion__boton7:hover {
-  background-color: grey;
-}
-
-.acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8 {
-  background-color: #61c0bf;
-  width: 99.9%;
-  height: 5rem;
-}
-
-.acordion .acordion__boton2:hover, .acordion .acordion__boton5:hover, .acordion .acordion__boton8:hover {
-  background-color: grey;
-}
-
-.acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9 {
-  background-color: #e6c486;
-  width: 99.9%;
-  height: 5rem;
-}
-
-.acordion .acordion__boton3:hover, .acordion .acordion__boton6:hover, .acordion .acordion__boton9:hover {
-  background-color: grey;
-}
-
-.acordion .acordion__p {
-  text-align: center;
-  font-size: 150%;
-  margin: 1rem;
-}
-
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  /*tablet*/
-  .acordion {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  /*celular*/
-  .acordion {
-    width: 100%;
-  }
-}
-
-/*general*/
-/*imagen*/
-/*título de las fotos en pág principal*/
-/*h2*/
-/*botón1*/
-/*botón2*/
-/*acordion*/
-/*footer*/
-/*Grid*/
-/*404*/
+/*El grid es para "Mi semana" */
 .semana {
   display: -ms-grid;
   display: grid;
@@ -792,13 +631,6 @@ h3 {
   grid-area: sábado;
 }
 
-/*.error {
-    background-color: $bg-error;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-}*/
 @media only screen and (max-width: 400px) {
   /*celular*/
   .semana {
@@ -829,76 +661,158 @@ h3 {
   }
 }
 
-/*general*/
-/*imagen*/
-/*título de las fotos en pág principal*/
-/*h2*/
-/*botón1*/
-/*botón2*/
-/*acordion*/
-/*footer*/
-/*Grid*/
-/*404*/
-.body__error {
-  background-color: #111010;
+/* Este código afecta a las recetas individuales*/
+.fotoReceta {
+  width: 300px;
+  height: 200px;
+  padding: 2px;
+  margin: auto;
 }
 
-.error {
+.fotoReceta img {
+  border: solid 1px #564D3F;
+}
+
+.ingredientes {
+  background-color: cornsilk;
+  border: solid 1px #564D3F;
+  border-radius: 5px;
+  padding: 0.7rem;
+  margin: 10px;
+}
+
+.ingredientes h2 {
+  background-color: lightpink;
+  border-radius: 5px;
+  border: whitesmoke solid 2px;
+  padding: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.ingredientes li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 0.7rem;
+}
+
+.pasos {
+  background-color: cornsilk;
+  border: solid 1px #564D3F;
+  border-radius: 5px;
+  padding: 0.7rem;
+  margin: 10px;
+}
+
+.pasos h2 {
+  background-color: lightpink;
+  border-radius: 5px;
+  border: whitesmoke solid 2px;
+  padding: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.pasos li {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 0.7rem;
+}
+
+/*Estilo del footer*/
+footer {
+  background-color: #e6b464;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.error__titulo {
-  color: #9b9494;
-  font-size: 300%;
-  padding: 5rem;
-  margin: auto;
+footer p {
+  font-family: "Noto Sans HK", sans-serif;
+  font-size: 1.1rem;
+  color: black;
+  padding: 0.1rem;
   text-align: center;
 }
 
-.error__icono {
-  width: 50%;
-  height: 50%;
-  padding: 2px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-line-pack: space-evenly;
-      align-content: space-evenly;
+footer .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.error__icono img {
-  width: 60%;
-  height: 60%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  /*tablet*/
-  .error__titulo {
-    font-size: 100%;
-  }
+footer .socialMedia img {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.1rem;
+  margin: 0.5rem;
 }
 
 @media only screen and (max-width: 400px) {
   /*celular*/
-  .error__titulo {
-    font-size: 80%;
+  footer {
+    background-color: #e6b464;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+  footer img {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  /*tablet*/
+  footer {
+    background-color: #e6b464;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+  footer img {
+    width: 1rem;
+    height: 1rem;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
