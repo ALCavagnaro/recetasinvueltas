@@ -51,8 +51,8 @@
 }
 
 .error__icono img {
-  width: 60%;
-  height: 60%;
+  /*width:60%;
+                height:60%;*/
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
