@@ -844,8 +844,8 @@ h3 {
 /*footer*/
 /*Grid*/
 /*404*/
-body {
-  background-color: black;
+.body__error {
+  background-color: #111010;
 }
 
 .error {
@@ -859,7 +859,7 @@ body {
 }
 
 .error__titulo {
-  color: whitesmoke;
+  color: #9b9494;
   font-size: 300%;
   font-family: 'Noto Sans JP', sans-serif;
   padding: 5rem;
