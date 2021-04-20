@@ -861,7 +861,6 @@ h3 {
 .error__titulo {
   color: #9b9494;
   font-size: 300%;
-  font-family: 'Noto Sans JP', sans-serif;
   padding: 5rem;
   margin: auto;
   text-align: center;
@@ -892,5 +891,19 @@ h3 {
       align-content: center;
   margin-left: 20%;
   margin-right: 20%;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  /*tablet*/
+  .error__titulo {
+    font-size: 300%/2;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /*celular*/
+  .error__titulo {
+    font-size: 300%/3;
+  }
 }
 /*# sourceMappingURL=estilo.css.map */

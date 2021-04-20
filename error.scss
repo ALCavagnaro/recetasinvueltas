@@ -15,7 +15,6 @@
 .error__titulo{
     color:rgb(155, 148, 148);
     font-size: 300%;
-    font-family: 'Noto Sans JP', sans-serif;
     padding:5rem;
     margin: auto;
     text-align: center;
@@ -42,4 +41,21 @@
                     
               }
             
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px){  /*tablet*/
+    .error__titulo{
+        
+        font-size: 300%/2;
+        
+    }
+}
+
+@media only screen and (max-width: 400px){       /*celular*/
+
+    .error__titulo{
+        
+        font-size: 300%/3;
+        
+    }
 }
