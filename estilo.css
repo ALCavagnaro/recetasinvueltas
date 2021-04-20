@@ -844,8 +844,11 @@ h3 {
 /*footer*/
 /*Grid*/
 /*404*/
-.error {
+body {
   background-color: black;
+}
+
+.error {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -853,20 +856,12 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  justify-self: center;
-  -ms-flex-line-pack: space-evenly;
-      align-content: space-evenly;
 }
 
 .error__titulo {
   color: whitesmoke;
-  font-size: 2rem;
+  font-size: 300%;
+  font-family: 'Noto Sans JP', sans-serif;
   padding: 5rem;
   margin: auto;
   text-align: center;
@@ -886,8 +881,8 @@ h3 {
 }
 
 .error__icono img {
-  /*width:60%;
-                height:60%;*/
+  width: 60%;
+  height: 60%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

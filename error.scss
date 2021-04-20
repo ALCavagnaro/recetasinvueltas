@@ -1,26 +1,24 @@
 @import "variables";
 
-.error{
+body{
+
     background-color: black;
+}
+
+.error{
+    
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-self: center;
-    justify-self: center;
-    align-content: space-evenly;
-
 }
 
 
 .error__titulo{
     color:whitesmoke;
-    font-size: 2rem;
+    font-size: 300%;
+    font-family: 'Noto Sans JP', sans-serif;
     padding:5rem;
     margin: auto;
     text-align: center;
-   
-
 }
 
 .error__icono {
@@ -34,8 +32,8 @@
     
       
          img {
-                /*width:60%;
-                height:60%;*/
+                width:60%;
+                height:60%;
                 align-self: center;
                 justify-self: center;
                 align-content: center;
