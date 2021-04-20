@@ -461,11 +461,6 @@ footer .socialMedia img {
   border: solid 1px #564D3F;
 }
 
-.fotoReceta img:hover {
-  -webkit-transform: scale(1.8);
-          transform: scale(1.8);
-}
-
 .ingredientes {
   background-color: cornsilk;
   border: solid 1px #564D3F;
