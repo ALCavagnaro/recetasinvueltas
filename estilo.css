@@ -127,7 +127,14 @@ h3 {
   padding: 3rem;
 }
 
-/*afecta a las recetas individuales y a la pag. de info gral*/
+/*INDEX CELULAR* - Se modifica opacidad de título para celular*/
+@media only screen and (max-width: 400px) {
+  .galeria__nombre {
+    opacity: 1;
+  }
+}
+
+/*PÁG. 'CONOCÉ MÁS' El acordión afecta a la pag. de info gral*/
 .acordion {
   background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(#fff6db));
   background-image: linear-gradient(to top, white, #fff6db);

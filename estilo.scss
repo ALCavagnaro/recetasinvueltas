@@ -183,8 +183,14 @@ nav {
     padding: 3rem;
 }
 
+/*INDEX CELULAR* - Se modifica opacidad de título para celular*/
 
-/*afecta a las recetas individuales y a la pag. de info gral*/
+@media only screen and (max-width: 400px) {
+    .galeria__nombre {opacity:1;}
+}
+
+
+/*PÁG. 'CONOCÉ MÁS' El acordión afecta a la pag. de info gral*/
 .acordion {                                                
     background-image: linear-gradient(to top, white, #fff6db);
     border: $border-secondary;
