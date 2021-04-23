@@ -146,9 +146,6 @@ h3 {
     -webkit-transform: translate(1%, -300%);
             transform: translate(1%, -300%);
     opacity: 1;
-  }
-  a .galeria__nombre:hover {
-    opacity: 1;
     text-shadow: 2px 0 0 grey, -2px 0 0 grey, 0 2px 0 grey, 0 -2px 0 grey, 1px 1px grey, -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey;
   }
 }
