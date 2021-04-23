@@ -188,10 +188,8 @@ nav {
 @media only screen and (max-width: 400px) {
 
     .galeria__nombre {
-    font-family: $letraReceta;
-    text-align: $lugarNombreReceta;
-    font-size: $sizeLetraReceta;
-    color: $colorNombreReceta;
+    font-size: 20%;
+    color: violet;
     font-weight: 500;
     position: initial;
     transform: translate(1%, -300%);
