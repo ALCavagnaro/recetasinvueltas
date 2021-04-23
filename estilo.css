@@ -81,23 +81,23 @@ nav .boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion 
           justify-content: center;
 }
 
-.galeria .galeriaRecetas {
+.galeria .galeria__Recetas {
   width: 300px;
   height: 200px;
 }
 
-.galeria .galeriaRecetas img {
+.galeria .galeria__Recetas img {
   border-radius: 5px;
   width: 300px;
   height: 200px;
   padding: 2px;
 }
 
-.galeria .galeriaRecetas img:hover {
+.galeria .galeria__Recetas img:hover {
   opacity: 0.7;
 }
 
-.galeria .galeriaRecetas a {
+.galeria .galeria__Recetas a {
   text-decoration: none;
   color: black;
   position: initial;
@@ -105,7 +105,7 @@ nav .boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion 
           transform: translate(1%, -300%);
 }
 
-.galeria .galeriaRecetas a .nombreReceta {
+.galeria .galeria__Recetas a .galeria__nombre {
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 1.6rem;
@@ -117,7 +117,7 @@ nav .boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion 
   opacity: 0;
 }
 
-.galeria .galeriaRecetas a .nombreReceta:hover {
+.galeria .galeria__Recetas a .galeria__nombre:hover {
   opacity: 1;
   text-shadow: 2px 0 0 grey, -2px 0 0 grey, 0 2px 0 grey, 0 -2px 0 grey, 1px 1px grey, -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey;
 }
