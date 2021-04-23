@@ -142,7 +142,7 @@ nav {
         width:$imgRecetaAncho;
         height:$imgRecetaAlto;
 
-    img {
+    .galeria__img {
         border-radius:$border;
         width:$imgRecetaAncho;
         height:$imgRecetaAlto;
@@ -151,7 +151,7 @@ nav {
     }
 
 
-    a {
+    .galeria__link {
         text-decoration: none;
         color:black;
         position: initial;
@@ -201,7 +201,7 @@ nav {
             width:$imgRecetaAncho;
             height:$imgRecetaAlto;
     
-        img {
+        .galeria__img {
             border-radius:$border;
             width:$imgRecetaAncho;
             height:$imgRecetaAlto;
@@ -209,7 +209,7 @@ nav {
         }
     
     
-        a {
+        .galeria__link {
             text-decoration: none;
             color:black;
             position: initial;
