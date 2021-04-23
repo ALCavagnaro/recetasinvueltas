@@ -129,20 +129,45 @@ h3 {
 
 /*INDEX CELULAR* - Se modifica opacidad de título para celular*/
 @media only screen and (max-width: 400px) {
-  .galeria__nombre {
+  .galeria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .galeria .galeria__Recetas {
+    width: 450px;
+    height: 300px;
+  }
+  .galeria .galeria__Recetas img {
+    border-radius: 5px;
+    width: 450px;
+    height: 300px;
+    padding: 2px;
+    opacity: 0.8;
+  }
+  .galeria .galeria__Recetas a {
+    text-decoration: none;
+    color: black;
+    position: initial;
+    -webkit-transform: translate(1%, -400%);
+            transform: translate(1%, -400%);
+  }
+  .galeria .galeria__Recetas a .galeria__nombre {
     font-family: "Roboto", sans-serif;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.92rem;
     color: whitesmoke;
-    font-weight: 700;
+    font-weight: 500;
     position: initial;
-    -webkit-transform: translate(1%, -300%);
-            transform: translate(1%, -300%);
-    opacity: 0;
-  }
-  .galeria__nombre:link {
+    -webkit-transform: translate(1%, -400%);
+            transform: translate(1%, -400%);
     opacity: 1;
-    text-shadow: 2px 0 0 grey, -2px 0 0 grey, 0 2px 0 grey, 0 -2px 0 grey, 1px 1px grey, -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey;
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
   }
 }
 

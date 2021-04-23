@@ -187,26 +187,53 @@ nav {
 
 @media only screen and (max-width: 400px) {
 
-    .galeria__nombre {
-        font-family: $letraReceta;
-        text-align: $lugarNombreReceta;
-        font-size: $sizeLetraReceta;
-        color: $colorNombreReceta;
-        font-weight: 700;
-        position: initial;
-        transform: translate(1%, -300%);
-        opacity:0;
-
-    &:link{  opacity:1;
-              text-shadow: 2px 0 0 grey, -2px 0 0 grey, 0 2px 0 grey, 0 -2px 0 grey, 1px 1px grey, -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey;
-            }
-                
+    .galeria {                               
+                        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    
+        .galeria__Recetas{                           
+    
+            width:$imgRecetaAncho*1.5;
+            height:$imgRecetaAlto*1.5;
+    
+        img {
+            border-radius:$border;
+            width:$imgRecetaAncho*1.5;
+            height:$imgRecetaAlto*1.5;
+            padding: $imgPadding;
+            opacity:0.8;
         }
+    
+    
+        a {
+            text-decoration: none;
+            color:black;
+            position: initial;
+            transform: translate(1%, -400%);
+     
+        .galeria__nombre {
+            font-family: $letraReceta;
+            text-align: $lugarNombreReceta;
+            font-size: $sizeLetraReceta*1.2;
+            color: $colorNombreReceta;
+            font-weight: 500;
+            position: initial;
+            transform: translate(1%, -400%);
+            opacity:1;
+            text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+               
+            }
+    
+          }
+    
+        }
+     }
+        
 
-
-}
-
-
+    }
 
 /*PÁG. 'CONOCÉ MÁS' El acordión afecta a la pag. de info gral*/
 .acordion {                                                
