@@ -74,7 +74,7 @@ body {
 /*Navegador*/
 
 header {
-    border-radius: $border;
+   
     box-shadow: $shadow;
     }
 
@@ -191,19 +191,20 @@ nav {
                         
         display: flex;
         flex-wrap: wrap;
+        display: column;
         justify-content: center;
+       
         
     
         .galeria__Recetas{                           
     
-            width:$imgRecetaAncho*1.5;
-            height:$imgRecetaAlto*1.5;
+            width:$imgRecetaAncho;
+            height:$imgRecetaAlto;
     
         img {
             border-radius:$border;
-            width:$imgRecetaAncho*1.5;
-            height:$imgRecetaAlto*1.5;
-            padding: $imgPadding;
+            width:$imgRecetaAncho;
+            height:$imgRecetaAlto;
             opacity:0.8;
         }
     
@@ -212,16 +213,16 @@ nav {
             text-decoration: none;
             color:black;
             position: initial;
-            transform: translate(1%, -400%);
+            transform: translate(1%, -300%);
      
         .galeria__nombre {
             font-family: $letraReceta;
             text-align: $lugarNombreReceta;
-            font-size: $sizeLetraReceta*1.2;
+            font-size: $sizeLetraReceta;
             color: $colorNombreReceta;
             font-weight: 500;
             position: initial;
-            transform: translate(1%, -400%);
+            transform: translate(1%, -300%);
             opacity:1;
             text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
                
