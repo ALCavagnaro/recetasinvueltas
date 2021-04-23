@@ -129,14 +129,7 @@ h3 {
 
 /*INDEX CELULAR* - Se modifica opacidad de título para celular*/
 @media only screen and (max-width: 400px) {
-  a {
-    text-decoration: none;
-    color: black;
-    position: initial;
-    -webkit-transform: translate(1%, -300%);
-            transform: translate(1%, -300%);
-  }
-  a .galeria__nombre {
+  .galeria__nombre {
     font-family: "Roboto", sans-serif;
     text-align: center;
     font-size: 1.6rem;
@@ -145,6 +138,9 @@ h3 {
     position: initial;
     -webkit-transform: translate(1%, -300%);
             transform: translate(1%, -300%);
+    opacity: 0;
+  }
+  .galeria__nombre:link {
     opacity: 1;
     text-shadow: 2px 0 0 grey, -2px 0 0 grey, 0 2px 0 grey, 0 -2px 0 grey, 1px 1px grey, -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey;
   }

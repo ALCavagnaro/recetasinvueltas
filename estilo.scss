@@ -187,12 +187,6 @@ nav {
 
 @media only screen and (max-width: 400px) {
 
-    a {
-        text-decoration: none;
-        color:black;
-        position: initial;
-        transform: translate(1%, -300%);
- 
     .galeria__nombre {
         font-family: $letraReceta;
         text-align: $lugarNombreReceta;
@@ -201,13 +195,16 @@ nav {
         font-weight: 700;
         position: initial;
         transform: translate(1%, -300%);
-        opacity:1;
-        text-shadow: 2px 0 0 grey, -2px 0 0 grey, 0 2px 0 grey, 0 -2px 0 grey, 1px 1px grey, -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey;
+        opacity:0;
+
+    &:link{  opacity:1;
+              text-shadow: 2px 0 0 grey, -2px 0 0 grey, 0 2px 0 grey, 0 -2px 0 grey, 1px 1px grey, -1px -1px 0 grey, 1px -1px 0 grey, -1px 1px 0 grey;
             }
                 
         }
 
-      }
+
+}
 
 
 
