@@ -1,14 +1,4 @@
 @charset "UTF-8";
-/*@import"variables";
-@import "formulario";
-@import "galeria";
-@import "navegador";
-@import "footer";   
-@import "receta";
-@import "body";
-@import "acordeon";
-@import "grid";
-@import "error";*/
 /*general*/
 /*imagen*/
 /*título de las fotos en pág principal*/
@@ -39,7 +29,7 @@ main {
   padding-bottom: 2rem;
 }
 
-nav .boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .formulario .formulario__boton2 {
+nav .boton, .modal__boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .formulario .formulario__boton2 {
   background-color: lightpink;
   border-radius: 5px;
   border: whitesmoke solid 2px;
@@ -61,7 +51,7 @@ nav {
 }
 
 /*Botones en gral. de todo el sitio*/
-nav .boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .formulario .formulario__boton2 {
+nav .boton, .modal__boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .formulario .formulario__boton2 {
   background-color: lightpink;
   border-radius: 5px;
   border: whitesmoke solid 2px;
@@ -168,6 +158,44 @@ h3 {
     opacity: 1;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
   }
+}
+
+/*Modal para recetas*/
+.modal-fade {
+  border-radius: 5px;
+}
+
+.modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #e6b464;
+}
+
+.modal-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 200%;
+  font-weight: 800;
+  color: whitesmoke;
+  word-spacing: 5%;
+}
+
+.modal__img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.modal-footer {
+  background-color: #e6b464;
+}
+
+.modal-body {
+  background-color: cornsilk;
 }
 
 /*PÁG. 'CONOCÉ MÁS' El acordión afecta a la pag. de info gral*/

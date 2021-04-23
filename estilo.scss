@@ -1,14 +1,3 @@
-/*@import"variables";
-@import "formulario";
-@import "galeria";
-@import "navegador";
-@import "footer";   
-@import "receta";
-@import "body";
-@import "acordeon";
-@import "grid";
-@import "error";*/
-
 
 /*general*/
 $color-bg:whitesmoke;
@@ -234,6 +223,44 @@ nav {
      }
         
 
+    }
+
+    /*Modal para recetas*/
+
+    .modal-fade {
+        border-radius: $border;
+    }
+
+    .modal-header{
+        display: flex;
+        flex-direction: column;
+        background-color: $color-primary;
+    }
+
+    .modal-title{
+        font-family: $letraReceta;
+        font-size: 200%;
+        font-weight: 800;
+        color: whitesmoke;
+        word-spacing: 5%;
+    }
+
+    .modal__img{
+        width:100%;
+        height: auto;
+        border-radius: $border;
+    }
+
+    .modal-footer{
+        background-color: $color-primary;
+    }
+
+    .modal-body {
+        background-color: cornsilk;
+    }
+
+    .modal__boton{
+        @extend%boton;
     }
 
 /*PÁG. 'CONOCÉ MÁS' El acordión afecta a la pag. de info gral*/
