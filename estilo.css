@@ -130,6 +130,14 @@ h3 {
 /*INDEX CELULAR* - Se modifica opacidad de título para celular*/
 @media only screen and (max-width: 400px) {
   .galeria__nombre {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 1.6rem;
+    color: whitesmoke;
+    font-weight: 500;
+    position: initial;
+    -webkit-transform: translate(1%, -300%);
+            transform: translate(1%, -300%);
     opacity: 1;
   }
 }

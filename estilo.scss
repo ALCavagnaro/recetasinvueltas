@@ -186,7 +186,16 @@ nav {
 /*INDEX CELULAR* - Se modifica opacidad de título para celular*/
 
 @media only screen and (max-width: 400px) {
-    .galeria__nombre {opacity:1;}
+
+    .galeria__nombre {
+    font-family: $letraReceta;
+    text-align: $lugarNombreReceta;
+    font-size: $sizeLetraReceta;
+    color: $colorNombreReceta;
+    font-weight: 500;
+    position: initial;
+    transform: translate(1%, -300%);
+    opacity:1;}
 }
 
 
