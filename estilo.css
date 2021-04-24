@@ -190,12 +190,49 @@ h3 {
   border-radius: 5px;
 }
 
+.modal__ul, .modal__ol {
+  padding-top: 1rem;
+}
+
+.modal__li {
+  padding: 0.5rem;
+}
+
 .modal-footer {
   background-color: #e6b464;
 }
 
 .modal-body {
   background-color: cornsilk;
+}
+
+.modal__link {
+  text-decoration: none;
+  color: black;
+}
+
+.modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/*Modal de recetas para celular. Lo que hace es acomodar los botones del footer en modo responsive*/
+@media only screen and (max-width: 400px) {
+  /*celular*/
+  .modal-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 /*PÁG. 'CONOCÉ MÁS' El acordión afecta a la pag. de info gral*/

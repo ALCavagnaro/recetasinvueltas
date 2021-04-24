@@ -27,7 +27,7 @@
                   <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href=index.html>Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="contacto.html">Contacto</a>
@@ -67,6 +67,7 @@
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
                                 <img src="img/icono.png"></a>
                             </div>
@@ -74,8 +75,8 @@
                         <img class="modal__img" src="img/Pizza.jpg" alt="Pizza de muzzarella">
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
+                            <strong>Ingredientes</strong>
+                            <ul class="modal__ul">
                                 <li>500 g. de harina</li>
                                 <li>20 g. de aceite</li>
                                 <li>2 cucharadas de sal</li>
@@ -84,24 +85,24 @@
                             </ul>
                         </div>
                         <div class="modal-body">
-                            <p>Pasos</p>
-                            <ol>
-                                <li>Diluir la levadura en el agua</li>
-                                <li>Volcar un poco de harina en un bowl</li>
-                                <li> Agregar la sal y el aceite</li>
-                                <li>Incorporar de a poco el agua y el resto de la harina en el recipiente</li>
-                                <li>Amasar hasta obtener una masa pareja, sin grumos</li>
-                                <li>Tapar el bowl con un repasador y dejar descansar la masa por dos horas en un lugar cercano a una fuente de calor</li>
-                                <li>Una vez pasado este tiempo, precalentar el horno a 250 °C</li>
-                                <li>Estirar la masa en una bandeja y agregar una cucharada de salsa</li>
-                                <li>Cocinar la pizza hasta que el fondo de la masa se tueste (entre 6 y 7 min.)</li>
-                                <li>Agregar más salsa y el queso muzzarella y calentar por última vez</li>
+                            <strong>Pasos</strong>
+                            <ol class="modal__ol">
+                                <li class="modal__li">Diluir la levadura en el agua</li>
+                                <li class="modal__li">Volcar un poco de harina en un bowl</li>
+                                <li class="modal__li"> Agregar la sal y el aceite</li>
+                                <li class="modal__li">Incorporar de a poco el agua y el resto de la harina en el recipiente</li>
+                                <li class="modal__li">Amasar hasta obtener una masa pareja, sin grumos</li>
+                                <li class="modal__li">Tapar el bowl con un repasador y dejar descansar la masa por dos horas en un lugar cercano a una fuente de calor</li>
+                                <li class="modal__li">Una vez pasado este tiempo, precalentar el horno a 250 °C</li>
+                                <li class="modal__li">Estirar la masa en una bandeja y agregar una cucharada de salsa</li>
+                                <li class="modal__li">Cocinar la pizza hasta que el fondo de la masa se tueste (entre 6 y 7 min.)</li>
+                                <li class="modal__li">Agregar más salsa y el queso muzzarella y calentar por última vez</li>
                             </ol>
                         </div>
                         <div class="modal-footer">    
                         <button class="modal__boton" type="button" data-bs-dismiss="modal">Cerrar</button>
-                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Descargar</button>
-                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Agregar a "Mi semana"</button>
+                        <button class="modal__boton" type="button">Descargar</button>
+                        <a class="modal__link" href="misemana.html"><button class="modal__boton" type="button">Agregar a Mi semana</button></a>
                         </div>
                     </div>
                     </div>
