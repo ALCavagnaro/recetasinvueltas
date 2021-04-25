@@ -18,13 +18,13 @@ $colorNombreReceta:whitesmoke;
 /*h2*/
 $colorH2:#564D3F;
 $marginH2:10px;
-$paddingH2:0.7rem;
+$paddingH2:2rem;
 $FontH2: 'Roboto', sans-serif;
 $SizeFontH2:1rem;
 $color-secondary:cornsilk;
 $border-secondary: solid 1px #564D3F;
 $opacity-secondary:0.7;
-$padding-secondary:20px;
+$padding-secondary:4rem;
 $margin-secondary:2rem;
 /*botón1*/
 $botonColor:lightpink;
@@ -612,7 +612,7 @@ h2{text-align: center;
      }
 
 
-/*El grid es para "Mi semana" */
+/*El grid es para "Mi semana" . La versión PC tiene 7 columnas y tres filas. Para responsive, se usa una única columna*/
 
 .semana {                                                           
     display:grid;
@@ -825,70 +825,35 @@ font-weight: bold;
 
 }
 
-/* Este código afecta a las recetas individuales*/
+/*Botón de descarga de "Mi semana"*/
 
-.fotoReceta{
-    width:$imgRecetaAncho;
-    height:$imgRecetaAlto;
-    padding: $imgPadding;
-    margin: auto;
-          img {
-              border:$border-secondary;
-              
-          }
-}
+.descarga {
+width: 99.5%;
+padding: $paddingH2;
+display: flex;
+justify-content: flex-end;
 
-.ingredientes {                                             
-              background-color: $color-secondary;
-              border:$border-secondary;
-              border-radius: $border;
-              padding:$paddingH2;
-              margin: $marginH2;
-          
-              h2 {
-                background-color: $botonColor;
-                border-radius: $border;
-                border: $botonBorde;
-                padding: $botonPadding;
-                width: fit-content;
-              }
-              
 
-          li {
-              font-family:$FontH2;
-              font-size: $SizeFontH2;
-              padding: $paddingH2;
-             
+  
+.descarga__boton {
+ 
+@extend%boton;
+
+&:hover{ background-color: gray;}
 
 }
 
 }
 
-.pasos {                                             
-    background-color: $color-secondary;
-    border:$border-secondary;
-    border-radius: $border;
-    padding:$paddingH2;
-    margin: $marginH2;
+/*Estilo de botón de descarga de "Mi semana" para responsive*/
 
-    h2 {
-        background-color: $botonColor;
-        border-radius: $border;
-        border: $botonBorde;
-        padding: $botonPadding;
-        width:fit-content;
-      }
-    
+@media only screen and (max-width: 400px) {              /*celular*/
 
-li {
-    font-family:$FontH2;
-    font-size: $SizeFontH2;
-    padding: $paddingH2;
-   
+    .descarga {
+        justify-content: center;
+    }
 
-}
-
-}
+}          
 
 /*Estilo del footer*/
 

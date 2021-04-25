@@ -29,7 +29,7 @@ main {
   padding-bottom: 2rem;
 }
 
-nav .boton, .modal__boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .formulario .formulario__boton2 {
+nav .boton, .modal__boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .formulario .formulario__boton2, .descarga .descarga__boton {
   background-color: lightpink;
   border-radius: 5px;
   border: whitesmoke solid 2px;
@@ -51,7 +51,7 @@ nav {
 }
 
 /*Botones en gral. de todo el sitio*/
-nav .boton, .modal__boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .formulario .formulario__boton2 {
+nav .boton, .modal__boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .formulario .formulario__boton2, .descarga .descarga__boton {
   background-color: lightpink;
   border-radius: 5px;
   border: whitesmoke solid 2px;
@@ -390,7 +390,7 @@ h2 {
 }
 
 .formulario .formulario__label {
-  padding: 0.7rem;
+  padding: 2rem;
   font-size: 110%;
   margin: 1%;
   width: 100%;
@@ -575,7 +575,7 @@ h2 {
   }
 }
 
-/*El grid es para "Mi semana" */
+/*El grid es para "Mi semana" . La versión PC tiene 7 columnas y tres filas. Para responsive, se usa una única columna*/
 .semana {
   display: -ms-grid;
   display: grid;
@@ -769,64 +769,30 @@ h2 {
   }
 }
 
-/* Este código afecta a las recetas individuales*/
-.fotoReceta {
-  width: 300px;
-  height: 200px;
-  padding: 2px;
-  margin: auto;
+/*Botón de descarga de "Mi semana"*/
+.descarga {
+  width: 99.5%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.fotoReceta img {
-  border: solid 1px #564D3F;
+.descarga .descarga__boton:hover {
+  background-color: gray;
 }
 
-.ingredientes {
-  background-color: cornsilk;
-  border: solid 1px #564D3F;
-  border-radius: 5px;
-  padding: 0.7rem;
-  margin: 10px;
-}
-
-.ingredientes h2 {
-  background-color: lightpink;
-  border-radius: 5px;
-  border: whitesmoke solid 2px;
-  padding: 0.5rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.ingredientes li {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  padding: 0.7rem;
-}
-
-.pasos {
-  background-color: cornsilk;
-  border: solid 1px #564D3F;
-  border-radius: 5px;
-  padding: 0.7rem;
-  margin: 10px;
-}
-
-.pasos h2 {
-  background-color: lightpink;
-  border-radius: 5px;
-  border: whitesmoke solid 2px;
-  padding: 0.5rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.pasos li {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  padding: 0.7rem;
+/*Estilo de botón de descarga de "Mi semana" para responsive*/
+@media only screen and (max-width: 400px) {
+  /*celular*/
+  .descarga {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 /*Estilo del footer*/
