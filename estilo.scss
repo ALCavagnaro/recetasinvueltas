@@ -522,9 +522,30 @@ nav {
         
     }
 }
+/*Para la pág. de contacto*/
 
+.formulario-contacto {
+    background-color: $color2;
+    width: 80%;
+    margin: 5% 10% 10%;
+    padding:2REM;
+    border-radius: $border;
+}
 
-/*formulario: afecta al ingreso de receta y al contacto*/
+.contacto__boton{
+    @extend%boton;
+}
+
+/*Celular pág. de contacto*/
+
+@media only screen and (max-width: 400px) {
+
+.formulario-contacto {
+    width: 100%;
+}
+}
+
+/*formulario: afecta al ingreso de receta*/
 
 
 
@@ -653,7 +674,7 @@ h2 {text-align: center;
  
      }
 
-     /*Este estilo afecta al formulario de contacto y de ingreso de recetas para responsive*/
+     /*Este estilo afecta al ingreso de recetas para responsive*/
  
      @media only screen and (min-width: 401px) and (max-width: 960px) {                /*tablet*/
         

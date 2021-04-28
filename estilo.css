@@ -65,7 +65,7 @@ main {
   padding-bottom: 2rem;
 }
 
-nav .boton, .modal__boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .formulario .formulario__boton2, .descarga .descarga__boton {
+nav .boton, .modal__boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .contacto__boton, .formulario .formulario__boton2, .descarga .descarga__boton {
   background-color: lightpink;
   border-radius: 5px;
   border: whitesmoke solid 2px;
@@ -87,7 +87,7 @@ nav {
 }
 
 /*Botones en gral. de todo el sitio*/
-nav .boton, .modal__boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .formulario .formulario__boton2, .descarga .descarga__boton {
+nav .boton, .modal__boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .contacto__boton, .formulario .formulario__boton2, .descarga .descarga__boton {
   background-color: lightpink;
   border-radius: 5px;
   border: whitesmoke solid 2px;
@@ -442,7 +442,23 @@ h3 {
   }
 }
 
-/*formulario: afecta al ingreso de receta y al contacto*/
+/*Para la pág. de contacto*/
+.formulario-contacto {
+  background-color: #e67364;
+  width: 80%;
+  margin: 5% 10% 10%;
+  padding: 2REM;
+  border-radius: 5px;
+}
+
+/*Celular pág. de contacto*/
+@media only screen and (max-width: 400px) {
+  .formulario-contacto {
+    width: 100%;
+  }
+}
+
+/*formulario: afecta al ingreso de receta*/
 h2 {
   text-align: center;
   padding: 3rem;
@@ -587,7 +603,7 @@ h2 {
   float: right;
 }
 
-/*Este estilo afecta al formulario de contacto y de ingreso de recetas para responsive*/
+/*Este estilo afecta al ingreso de recetas para responsive*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   /*tablet*/
   .formulario {
