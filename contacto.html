@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     </head>
-    <body>
+    <body class="body__fondo2">
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
             <div class="container-fluid">
@@ -54,46 +54,44 @@
     </header>
         <br>
         <br>
-        <h2>Podés escribirnos</h2>
+        <h2>Podés escribirnos. ¡Esperamos tu mensaje!</h2>
         <main>
-            <div class="formulario">
-                <form action= "contacto.jss" method="get">
-                    <label for="nombre_apellido">Nombre y apellido:</label>	
-                    <input type="text" name="nombre_apellido" required/>
-                    <br>
-                    <br>
-                
-                    <label for="correo_electrónico">Correo electrónico:</label>	
-                    <input type="text" name="nombre_apellido" placeholder="ejemplo@ejemplo.com" required/>
-                    <br>
-                    <br>
-                
-                    <select name="País">
-                        <option value="Seleccioná tu país">Seleccioná tu país</option>
-                        <option value="Argentina">Argentina</option>
-                        <option value="Chile">Chile</option>
-                        <option value="Uruguay">Uruguay</option>
-                        <option value="Otro">Otro</option>
-                    </select>
-                    
-                    <br>
-                    <br>
-                
-                    <label class= "formulario__label" for="email">Dejanos tu mensaje</label>
-                    <textarea class="formulario__input--pasos" type="text" placeholder="Max. 200 caracteres" maxlength="200"></textarea>
-                    <br>
-                    <br> 
-                
-                    <div class="check__input">Quiero recibir el Newsletter</div>
-                    <input type="checkbox" name="acepta" value="1" />
-                    <br>
-                    <br>
-                    <div class= "col-md-3 col-sm-6 col-12 boton_enviarBorrar">
-                      <button class="formulario__boton" type="submit" value="Enviar">Enviar</button>
-                      <button class="formulario__boton" type="reset" value="Borrar">Borrar</button>
+          <div class="formulario-contacto">
+            <form class="row g-3">
+                <div class="col-md-4 formulario-contacto__label">
+                  <label for="validationServer01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="validationServer01" placeholder="Nombre" required>
+                </div>
+                <div class="col-md-4 formulario-contacto__label">
+                  <label for="validationServer02" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="validationServer02" placeholder="Apellido" required>
+                </div>
+                <div class="mb-3 formulario-contacto__correo">
+                    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ejemplo@ejemplo.com" aria-describedby="emailHelp" required>
+                    <div id="emailHelp" class="form-text">Nunca compartiremos tu dirección de correo electrónico</div>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Mensaje</label>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck">
+                        Acepto los términos y condiciones
+                      </label>
+                      <div class="invalid-feedback">
+                        Aceptar los términos y condiciones para continuar
+                      </div>
                     </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                    <button class="btn btn-primary" type="dismiss">Borrar</button>
+                  </div>
                 </form>
-            </div>
+          </div>
         </main>
         <section>
           <footer>

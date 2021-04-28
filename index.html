@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     </head>
-    <body>
+    <body class="body__fondo2">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
                 <div class="container-fluid">
@@ -57,8 +57,8 @@
         <main>
             <div class="galeria">
                 <div class="galeria__Recetas">
-                    <a class= "galeria__link" target="_self" href="receta1.html" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
-                        <img class= "galeria__img" src="img/Pizza.jpg" alt="Pizza de muzzarella">
+                    <a class= "galeria__link" target="_self" href="url" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
+                        <img class= "galeria__img" src="img/Pizza.jpg" href="url" alt="Pizza de muzzarella">
                         <div class="galeria__nombre">Pizza de muzzarella</div>
                     </a>
                 </div>
@@ -109,508 +109,578 @@
                 </div>
                 <!--Fin modal-->
                 <div class="galeria__Recetas">
-                    <a class= "galeria__link" target="_self" href="receta2.html" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
-                        <img class= "galeria__img" src="img/canelones.jpg" alt="Canelones de verdura">
+                    <a class= "galeria__link" target="_self" href="url" data-bs-toggle="modal" data-bs-target="#exampleModal-1"> <!--Modal de Bootstrap dentro del link/ #EXAMPLEMODAL TIENE QUE COINCIDIR CON ID DE PRIMERA LÍNEA DE MODAL-->
+                        <img class= "galeria__img" src="img/canelones.jpg"  alt="Canelones de verdura">
                         <div class="galeria__nombre">Canelones de verdura</div>
                     </a>
                 </div>
                  <!-- Modal Se agrega debajo de bloque de foto + nombre receta-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                 <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--EL NOMBRE DEL ID DE ESTA LÍNEA TIENE QUE COINCIDIR CON EL NOMBRE DEL "DATA-BS-TARGET" DEL LINK-->
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Pizza de muzarella</h5>
-                        <img src="img/Pizza.jpg" alt="Pizza de muzzarella">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
+                                <img src="img/icono.png"></a>
+                            </div>
+                        <h5 class="modal-title" id="exampleModalLabel">Canelones de verdura</h5>
+                        <img class="modal__img" src="img/canelones.jpg" alt="Canelones de verdura">
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li> lalalalala</li>
-                                <li>lalalalalalal</li>
+                            <strong>Ingredientes</strong>
+                            <ul class="modal__ul">
+                                <li>...</li>
+                                
                             </ul>
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li>eeeeeeeeeeeeeeeeee</li>
-                                <li>iiiiiiiiiiiiiiiiii</li>
-                            </ul>
+                            <strong>Pasos</strong>
+                            <ol class="modal__ol">
+                                <li class="modal__li">...</li>
+                                
+                            </ol>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descargar</button>
+                        <div class="modal-footer">    
+                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="modal__boton" type="button">Descargar</button>
+                        <a class="modal__link" href="misemana.html"><button class="modal__boton" type="button">Agregar a Mi semana</button></a>
                         </div>
                     </div>
                     </div>
                 </div>
                 <!--Fin modal-->
                 <div class="galeria__Recetas">
-                    <a class= "galeria__link" target="_self" href="receta3.html" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
+                    <a class= "galeria__link" target="_self" href= "url" data-bs-toggle="modal" data-bs-target="#exampleModal-2"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
                         <img class= "galeria__img" src="img/pan.jpg" alt="Pan casero">
                         <div class="galeria__nombre">Pan casero</div>
                     </a>
                 </div>
                  <!-- Modal Se agrega debajo de bloque de foto + nombre receta-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                 <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--EL NOMBRE DEL ID DE ESTA LÍNEA TIENE QUE COINCIDIR CON EL NOMBRE DEL "DATA-BS-TARGET" DEL LINK-->
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Pizza de muzarella</h5>
-                        <img src="img/Pizza.jpg" alt="Pizza de muzzarella">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
+                                <img src="img/icono.png"></a>
+                            </div>
+                        <h5 class="modal-title" id="exampleModalLabel">Pan casero</h5>
+                        <img class="modal__img" src="img/pan.jpg" alt="pan casero">
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li> lalalalala</li>
-                                <li>lalalalalalal</li>
+                            <strong>Ingredientes</strong>
+                            <ul class="modal__ul">
+                                <li>...</li>
+                                
                             </ul>
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li>eeeeeeeeeeeeeeeeee</li>
-                                <li>iiiiiiiiiiiiiiiiii</li>
-                            </ul>
+                            <strong>Pasos</strong>
+                            <ol class="modal__ol">
+                                <li class="modal__li">...</li>
+                                
+                            </ol>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descargar</button>
+                        <div class="modal-footer">    
+                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="modal__boton" type="button">Descargar</button>
+                        <a class="modal__link" href="misemana.html"><button class="modal__boton" type="button">Agregar a Mi semana</button></a>
                         </div>
                     </div>
                     </div>
                 </div>
                 <!--Fin modal-->
                 <div class="galeria__Recetas">
-                    <a class= "galeria__link" target="_self" href="receta4.html" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
+                    <a class= "galeria__link" target="_self" href="url" data-bs-toggle="modal" data-bs-target="#exampleModal-3"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
                         <img class= "galeria__img" src="img/hummus.jpg" alt="Hummus">
                         <div class="galeria__nombre">Hummus</div>
                     </a>
                 </div>
                 <!-- Modal Se agrega debajo de bloque de foto + nombre receta-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--EL NOMBRE DEL ID DE ESTA LÍNEA TIENE QUE COINCIDIR CON EL NOMBRE DEL "DATA-BS-TARGET" DEL LINK-->
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Pizza de muzarella</h5>
-                        <img src="img/Pizza.jpg" alt="Pizza de muzzarella">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
+                                <img src="img/icono.png"></a>
+                            </div>
+                        <h5 class="modal-title" id="exampleModalLabel">Hummus</h5>
+                        <img class="modal__img" src="img/hummus.jpg" alt="Hummus">
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li> lalalalala</li>
-                                <li>lalalalalalal</li>
+                            <strong>Ingredientes</strong>
+                            <ul class="modal__ul">
+                                <li>...</li>
+                                
                             </ul>
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li>eeeeeeeeeeeeeeeeee</li>
-                                <li>iiiiiiiiiiiiiiiiii</li>
-                            </ul>
+                            <strong>Pasos</strong>
+                            <ol class="modal__ol">
+                                <li class="modal__li">...</li>
+                                
+                            </ol>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descargar</button>
+                        <div class="modal-footer">    
+                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="modal__boton" type="button">Descargar</button>
+                        <a class="modal__link" href="misemana.html"><button class="modal__boton" type="button">Agregar a Mi semana</button></a>
                         </div>
                     </div>
                     </div>
                 </div>
                 <!--Fin modal-->
                 <div class="galeria__Recetas">
-                    <a class= "galeria__link" target="_self" href="receta5.html" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
+                    <a class= "galeria__link" target="_self" href= "url" data-bs-toggle="modal" data-bs-target="#exampleModal-4"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
                         <img class= "galeria__img" src="img/jamonyqueso.jpg" alt="Tarta de jamón y queso">
                         <div class="galeria__nombre">Tarta de jamón y queso</div>
                     </a>
                 </div>
                 <!-- Modal Se agrega debajo de bloque de foto + nombre receta-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--EL NOMBRE DEL ID DE ESTA LÍNEA TIENE QUE COINCIDIR CON EL NOMBRE DEL "DATA-BS-TARGET" DEL LINK-->
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Pizza de muzarella</h5>
-                        <img src="img/Pizza.jpg" alt="Pizza de muzzarella">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
+                                <img src="img/icono.png"></a>
+                            </div>
+                        <h5 class="modal-title" id="exampleModalLabel">Tarta de jamón y queso</h5>
+                        <img class="modal__img" src="img/jamonyqueso.jpg" alt="Tarta de jamón y queso">
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li> lalalalala</li>
-                                <li>lalalalalalal</li>
+                            <strong>Ingredientes</strong>
+                            <ul class="modal__ul">
+                                <li>...</li>
+                                
                             </ul>
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li>eeeeeeeeeeeeeeeeee</li>
-                                <li>iiiiiiiiiiiiiiiiii</li>
-                            </ul>
+                            <strong>Pasos</strong>
+                            <ol class="modal__ol">
+                                <li class="modal__li">...</li>
+                                
+                            </ol>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descargar</button>
+                        <div class="modal-footer">    
+                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="modal__boton" type="button">Descargar</button>
+                        <a class="modal__link" href="misemana.html"><button class="modal__boton" type="button">Agregar a Mi semana</button></a>
                         </div>
                     </div>
                     </div>
                 </div>
                 <!--Fin modal-->
                 <div class="galeria__Recetas">
-                    <a class= "galeria__link" target="_self" href="receta6.html" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
+                    <a class= "galeria__link" target="_self" href="receta6.html" data-bs-toggle="modal" data-bs-target="#exampleModal-5"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
                         <img class= "galeria__img" src="img/tallarines.jpg" alt="Tallarines con salsa bolognesa">
                         <div class="galeria__nombre">Tallarines </div>
                     </a>
                 </div>
                 <!-- Modal Se agrega debajo de bloque de foto + nombre receta-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--EL NOMBRE DEL ID DE ESTA LÍNEA TIENE QUE COINCIDIR CON EL NOMBRE DEL "DATA-BS-TARGET" DEL LINK-->
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Pizza de muzarella</h5>
-                        <img src="img/Pizza.jpg" alt="Pizza de muzzarella">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
+                                <img src="img/icono.png"></a>
+                            </div>
+                        <h5 class="modal-title" id="exampleModalLabel">Tallarines</h5>
+                        <img class="modal__img" src="img/tallarines.jpg" alt="Tallarines con salsa bolognesa">
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li> lalalalala</li>
-                                <li>lalalalalalal</li>
+                            <strong>Ingredientes</strong>
+                            <ul class="modal__ul">
+                                <li>...</li>
+                                
                             </ul>
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li>eeeeeeeeeeeeeeeeee</li>
-                                <li>iiiiiiiiiiiiiiiiii</li>
-                            </ul>
+                            <strong>Pasos</strong>
+                            <ol class="modal__ol">
+                                <li class="modal__li">...</li>
+                                
+                            </ol>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descargar</button>
+                        <div class="modal-footer">    
+                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="modal__boton" type="button">Descargar</button>
+                        <a class="modal__link" href="misemana.html"><button class="modal__boton" type="button">Agregar a Mi semana</button></a>
                         </div>
                     </div>
                     </div>
                 </div>
                 <!--Fin modal-->
                 <div class="galeria__Recetas">
-                    <a class= "galeria__link" target="_self" href="receta7.html" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
+                    <a class= "galeria__link" target="_self" href="url" data-bs-toggle="modal" data-bs-target="#exampleModal-6"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
                         <img class= "galeria__img" src="img/zapallitos.jpg" alt="Tarta de zapallitos">
                         <div class="galeria__nombre">Tarta de zapallitos</div>
                     </a>
                 </div>
                 <!-- Modal Se agrega debajo de bloque de foto + nombre receta-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--EL NOMBRE DEL ID DE ESTA LÍNEA TIENE QUE COINCIDIR CON EL NOMBRE DEL "DATA-BS-TARGET" DEL LINK-->
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Pizza de muzarella</h5>
-                        <img src="img/Pizza.jpg" alt="Pizza de muzzarella">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
+                                <img src="img/icono.png"></a>
+                            </div>
+                        <h5 class="modal-title" id="exampleModalLabel">Tarta de zapallitos</h5>
+                        <img class="modal__img" src="img/zapallitos.jpg" alt="Tarta de zapallitos">
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li> lalalalala</li>
-                                <li>lalalalalalal</li>
+                            <strong>Ingredientes</strong>
+                            <ul class="modal__ul">
+                                <li>...</li>
+                                
                             </ul>
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li>eeeeeeeeeeeeeeeeee</li>
-                                <li>iiiiiiiiiiiiiiiiii</li>
-                            </ul>
+                            <strong>Pasos</strong>
+                            <ol class="modal__ol">
+                                <li class="modal__li">...</li>
+                                
+                            </ol>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descargar</button>
+                        <div class="modal-footer">    
+                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="modal__boton" type="button">Descargar</button>
+                        <a class="modal__link" href="misemana.html"><button class="modal__boton" type="button">Agregar a Mi semana</button></a>
                         </div>
                     </div>
                     </div>
                 </div>
                 <!--Fin modal-->
                 <div class="galeria__Recetas">
-                    <a class= "galeria__link" target="_self" href="receta8.html" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
+                    <a class= "galeria__link" target="_self" href="url" data-bs-toggle="modal" data-bs-target="#exampleModal-7"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
                         <img class= "galeria__img" src="img/atun.jpg" alt="Tarta de atún">
                         <div class="galeria__nombre">Tarta de atún</div>
                     </a>
                 </div>
                 <!-- Modal Se agrega debajo de bloque de foto + nombre receta-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal-7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--EL NOMBRE DEL ID DE ESTA LÍNEA TIENE QUE COINCIDIR CON EL NOMBRE DEL "DATA-BS-TARGET" DEL LINK-->
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Pizza de muzarella</h5>
-                        <img src="img/Pizza.jpg" alt="Pizza de muzzarella">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
+                                <img src="img/icono.png"></a>
+                            </div>
+                        <h5 class="modal-title" id="exampleModalLabel">Tarta de atún</h5>
+                        <img class="modal__img" src="img/atun.jpg" alt="Tarta de atún">
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li> lalalalala</li>
-                                <li>lalalalalalal</li>
+                            <strong>Ingredientes</strong>
+                            <ul class="modal__ul">
+                                <li>...</li>
+                                
                             </ul>
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li>eeeeeeeeeeeeeeeeee</li>
-                                <li>iiiiiiiiiiiiiiiiii</li>
-                            </ul>
+                            <strong>Pasos</strong>
+                            <ol class="modal__ol">
+                                <li class="modal__li">...</li>
+                                
+                            </ol>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descargar</button>
+                        <div class="modal-footer">    
+                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="modal__boton" type="button">Descargar</button>
+                        <a class="modal__link" href="misemana.html"><button class="modal__boton" type="button">Agregar a Mi semana</button></a>
                         </div>
                     </div>
                     </div>
                 </div>
                 <!--Fin modal-->
                 <div class="galeria__Recetas">
-                    <a class= "galeria__link" target="_self" href="receta9.html" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
+                    <a class= "galeria__link" target="_self" href="url" data-bs-toggle="modal" data-bs-target="#exampleModal-8"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
                         <img class= "galeria__img" src="img/tortilla.jpg" alt="Tortilla de papas">
                         <div class="galeria__nombre">Tortilla de papas</div>
                     </a>
                 </div>
                 <!-- Modal Se agrega debajo de bloque de foto + nombre receta-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal-8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--EL NOMBRE DEL ID DE ESTA LÍNEA TIENE QUE COINCIDIR CON EL NOMBRE DEL "DATA-BS-TARGET" DEL LINK-->
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Pizza de muzarella</h5>
-                        <img src="img/Pizza.jpg" alt="Pizza de muzzarella">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
+                                <img src="img/icono.png"></a>
+                            </div>
+                        <h5 class="modal-title" id="exampleModalLabel">Tortilla de papa</h5>
+                        <img class="modal__img" src="img/tortilla.jpg" alt="Tortilla de papa">
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li> lalalalala</li>
-                                <li>lalalalalalal</li>
+                            <strong>Ingredientes</strong>
+                            <ul class="modal__ul">
+                                <li>...</li>
+                                
                             </ul>
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li>eeeeeeeeeeeeeeeeee</li>
-                                <li>iiiiiiiiiiiiiiiiii</li>
-                            </ul>
+                            <strong>Pasos</strong>
+                            <ol class="modal__ol">
+                                <li class="modal__li">...</li>
+                                
+                            </ol>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descargar</button>
+                        <div class="modal-footer">    
+                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="modal__boton" type="button">Descargar</button>
+                        <a class="modal__link" href="misemana.html"><button class="modal__boton" type="button">Agregar a Mi semana</button></a>
                         </div>
                     </div>
                     </div>
                 </div>
                 <!--Fin modal-->
                 <div class="galeria__Recetas">
-                    <a class= "galeria__link" target="_self" href="receta10.html" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
+                    <a class= "galeria__link" target="_self" href="url" data-bs-toggle="modal" data-bs-target="#exampleModal-9"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
                         <img class= "galeria__img" src="img/pascualina.jpg" alt="Pascualina">
                         <div class="galeria__nombre">Pascualina</div>
                     </a>
                 </div>
                 <!-- Modal Se agrega debajo de bloque de foto + nombre receta-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal-9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--EL NOMBRE DEL ID DE ESTA LÍNEA TIENE QUE COINCIDIR CON EL NOMBRE DEL "DATA-BS-TARGET" DEL LINK-->
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Pizza de muzarella</h5>
-                        <img src="img/Pizza.jpg" alt="Pizza de muzzarella">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
+                                <img src="img/icono.png"></a>
+                            </div>
+                        <h5 class="modal-title" id="exampleModalLabel">Pascualina</h5>
+                        <img class="modal__img" src="img/pascualina.jpg" alt="Pascualina">
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li> lalalalala</li>
-                                <li>lalalalalalal</li>
+                            <strong>Ingredientes</strong>
+                            <ul class="modal__ul">
+                                <li>...</li>
+                                
                             </ul>
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li>eeeeeeeeeeeeeeeeee</li>
-                                <li>iiiiiiiiiiiiiiiiii</li>
-                            </ul>
+                            <strong>Pasos</strong>
+                            <ol class="modal__ol">
+                                <li class="modal__li">...</li>
+                                
+                            </ol>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descargar</button>
+                        <div class="modal-footer">    
+                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="modal__boton" type="button">Descargar</button>
+                        <a class="modal__link" href="misemana.html"><button class="modal__boton" type="button">Agregar a Mi semana</button></a>
                         </div>
                     </div>
                     </div>
-                </div>
+                </div>               
                 <!--Fin modal-->
                 <div class="galeria__Recetas">
-                    <a class= "galeria__link" target="_self" href="receta11.html" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
+                    <a class= "galeria__link" target="_self" href="url" data-bs-toggle="modal" data-bs-target="#exampleModal-10"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
                         <img class= "galeria__img" src="img/ñoquis.jpg" alt="Ñoquis de papa">
                         <div class="galeria__nombre">Ñoquis de papa</div>
                     </a>
                 </div>
                 <!-- Modal Se agrega debajo de bloque de foto + nombre receta-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal-10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--EL NOMBRE DEL ID DE ESTA LÍNEA TIENE QUE COINCIDIR CON EL NOMBRE DEL "DATA-BS-TARGET" DEL LINK-->
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Pizza de muzarella</h5>
-                        <img src="img/Pizza.jpg" alt="Pizza de muzzarella">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
+                                <img src="img/icono.png"></a>
+                            </div>
+                        <h5 class="modal-title" id="exampleModalLabel">Ñoquis de papa</h5>
+                        <img class="modal__img" src="img/ñoquis.jpg" alt="Ñoquis de papa">
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li> lalalalala</li>
-                                <li>lalalalalalal</li>
+                            <strong>Ingredientes</strong>
+                            <ul class="modal__ul">
+                                <li>...</li>
+                                
                             </ul>
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li>eeeeeeeeeeeeeeeeee</li>
-                                <li>iiiiiiiiiiiiiiiiii</li>
-                            </ul>
+                            <strong>Pasos</strong>
+                            <ol class="modal__ol">
+                                <li class="modal__li">...</li>
+                                
+                            </ol>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descargar</button>
+                        <div class="modal-footer">    
+                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="modal__boton" type="button">Descargar</button>
+                        <a class="modal__link" href="misemana.html"><button class="modal__boton" type="button">Agregar a Mi semana</button></a>
                         </div>
                     </div>
                     </div>
-                </div>
+                </div>          
                 <!--Fin modal-->
                 <div class="galeria__Recetas">
-                    <a class= "galeria__link" target="_self" href="receta12.html" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
+                    <a class= "galeria__link" target="_self" href="url" data-bs-toggle="modal" data-bs-target="#exampleModal-11"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
                         <img class= "galeria__img" src="img/lasaña.jpg" alt="Lasaña vegana">
                         <div class="galeria__nombre">Lasaña vegana</div>
                     </a>
                 </div>
                 <!-- Modal Se agrega debajo de bloque de foto + nombre receta-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal-11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--EL NOMBRE DEL ID DE ESTA LÍNEA TIENE QUE COINCIDIR CON EL NOMBRE DEL "DATA-BS-TARGET" DEL LINK-->
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Pizza de muzarella</h5>
-                        <img src="img/Pizza.jpg" alt="Pizza de muzzarella">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
+                                <img src="img/icono.png"></a>
+                            </div>
+                        <h5 class="modal-title" id="exampleModalLabel">Lasaña vegana</h5>
+                        <img class="modal__img" src="img/lasaña.jpg" alt="Lasaña vegana">
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li> lalalalala</li>
-                                <li>lalalalalalal</li>
+                            <strong>Ingredientes</strong>
+                            <ul class="modal__ul">
+                                <li>...</li>
+                                
                             </ul>
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li>eeeeeeeeeeeeeeeeee</li>
-                                <li>iiiiiiiiiiiiiiiiii</li>
-                            </ul>
+                            <strong>Pasos</strong>
+                            <ol class="modal__ol">
+                                <li class="modal__li">...</li>
+                                
+                            </ol>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descargar</button>
+                        <div class="modal-footer">    
+                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="modal__boton" type="button">Descargar</button>
+                        <a class="modal__link" href="misemana.html"><button class="modal__boton" type="button">Agregar a Mi semana</button></a>
                         </div>
                     </div>
                     </div>
-                </div>
+                </div>          
                 <!--Fin modal-->
                 <div class="galeria__Recetas">
-                    <a class= "galeria__link" target="_self" href="receta13.html" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
+                    <a class= "galeria__link" target="_self" href="url" data-bs-toggle="modal" data-bs-target="#exampleModal-12"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
                         <img class= "galeria__img" src="img/Hamburguesasv.jpg" alt="Hamburguesas veganas">
                         <div class="galeria__nombre">Hamburguesas veganas</div>
                     </a>
                 </div>
                 <!-- Modal Se agrega debajo de bloque de foto + nombre receta-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal-12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--EL NOMBRE DEL ID DE ESTA LÍNEA TIENE QUE COINCIDIR CON EL NOMBRE DEL "DATA-BS-TARGET" DEL LINK-->
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Pizza de muzarella</h5>
-                        <img src="img/Pizza.jpg" alt="Pizza de muzzarella">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
+                                <img src="img/icono.png"></a>
+                            </div>
+                        <h5 class="modal-title" id="exampleModalLabel">Hamburguesas veganas</h5>
+                        <img class="modal__img" src="img/Hamburguesasv.jpg" alt="Hamburguesas veganas">
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li> lalalalala</li>
-                                <li>lalalalalalal</li>
+                            <strong>Ingredientes</strong>
+                            <ul class="modal__ul">
+                                <li>...</li>
+                                
                             </ul>
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li>eeeeeeeeeeeeeeeeee</li>
-                                <li>iiiiiiiiiiiiiiiiii</li>
-                            </ul>
+                            <strong>Pasos</strong>
+                            <ol class="modal__ol">
+                                <li class="modal__li">...</li>
+                                
+                            </ol>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descargar</button>
+                        <div class="modal-footer">    
+                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="modal__boton" type="button">Descargar</button>
+                        <a class="modal__link" href="misemana.html"><button class="modal__boton" type="button">Agregar a Mi semana</button></a>
                         </div>
                     </div>
                     </div>
-                </div>
+                </div>          
                 <!--Fin modal-->
                 <div class="galeria__Recetas">
-                    <a class= "galeria__link" target="_self" href="receta14.html" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
+                    <a class= "galeria__link" target="_self" href="url" data-bs-toggle="modal" data-bs-target="#exampleModal-13"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
                         <img class= "galeria__img" src="img/ARROZWOK.jpg" alt="Arroz al wok con vegetales">
                         <div class="galeria__nombre">Arroz al wok</div>
                     </a>
                 </div>
                 <!-- Modal Se agrega debajo de bloque de foto + nombre receta-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal-13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--EL NOMBRE DEL ID DE ESTA LÍNEA TIENE QUE COINCIDIR CON EL NOMBRE DEL "DATA-BS-TARGET" DEL LINK-->
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Pizza de muzarella</h5>
-                        <img src="img/Pizza.jpg" alt="Pizza de muzzarella">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
+                                <img src="img/icono.png"></a>
+                            </div>
+                        <h5 class="modal-title" id="exampleModalLabel">Arroz al wok</h5>
+                        <img class="modal__img" src="img/ARROZWOK.jpg" alt="Arroz al wok con vegetales">
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li> lalalalala</li>
-                                <li>lalalalalalal</li>
+                            <strong>Ingredientes</strong>
+                            <ul class="modal__ul">
+                                <li>...</li>
+                                
                             </ul>
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li>eeeeeeeeeeeeeeeeee</li>
-                                <li>iiiiiiiiiiiiiiiiii</li>
-                            </ul>
+                            <strong>Pasos</strong>
+                            <ol class="modal__ol">
+                                <li class="modal__li">...</li>
+                                
+                            </ol>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descargar</button>
+                        <div class="modal-footer">    
+                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="modal__boton" type="button">Descargar</button>
+                        <a class="modal__link" href="misemana.html"><button class="modal__boton" type="button">Agregar a Mi semana</button></a>
                         </div>
                     </div>
                     </div>
-                </div>
+                </div>          
                 <!--Fin modal-->
                 <div class="galeria__Recetas">
-                    <a class= "galeria__link" target="_self" href="receta15.html" data-bs-toggle="modal" data-bs-target="#exampleModal"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
+                    <a class= "galeria__link" target="_self" href="url" data-bs-toggle="modal" data-bs-target="#exampleModal-14"> <!--Se le agrega el 'data-bs-toggle="modal" data-bs-target="#exampleModal"' de Bootstrap al link-->
                         <img class= "galeria__img" src="img/zapallitosrellenos.jpg" alt="Zapallitos rellenos con carne">
                         <div class="galeria__nombre">Zapallitos rellenos</div>
                     </a>
                 </div>
                 <!-- Modal Se agrega debajo de bloque de foto + nombre receta-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal-14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--EL NOMBRE DEL ID DE ESTA LÍNEA TIENE QUE COINCIDIR CON EL NOMBRE DEL "DATA-BS-TARGET" DEL LINK-->
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Pizza de muzarella</h5>
-                        <img src="img/Pizza.jpg" alt="Pizza de muzzarella">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="icono"><a class="navbar-brand" target="_self" href="index.html">
+                                <img src="img/icono.png"></a>
+                            </div>
+                        <h5 class="modal-title" id="exampleModalLabel">Zapallitos rellenos</h5>
+                        <img class="modal__img" src="img/zapallitosrellenos.jpg" alt="Zapallitos rellenos con carne">
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li> lalalalala</li>
-                                <li>lalalalalalal</li>
+                            <strong>Ingredientes</strong>
+                            <ul class="modal__ul">
+                                <li>...</li>
+                                
                             </ul>
                         </div>
                         <div class="modal-body">
-                            <p>Ingredientes</p>
-                            <ul>
-                                <li>eeeeeeeeeeeeeeeeee</li>
-                                <li>iiiiiiiiiiiiiiiiii</li>
-                            </ul>
+                            <strong>Pasos</strong>
+                            <ol class="modal__ol">
+                                <li class="modal__li">...</li>
+                                
+                            </ol>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descargar</button>
+                        <div class="modal-footer">    
+                        <button class="modal__boton" type="button" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="modal__boton" type="button">Descargar</button>
+                        <a class="modal__link" href="misemana.html"><button class="modal__boton" type="button">Agregar a Mi semana</button></a>
                         </div>
                     </div>
                     </div>
-                </div>
+                </div>          
                 <!--Fin modal-->
             </div>
         </main>
