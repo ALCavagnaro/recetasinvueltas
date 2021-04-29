@@ -522,6 +522,8 @@ nav {
         
     }
 }
+
+
 /*Para la pág. de contacto*/
 
 .formulario-contacto {
@@ -556,27 +558,13 @@ h2 {text-align: center;
     margin: auto;
  }
  
- .contenido{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
- }
- 
  .formulario {               
-     background-color:$bg-color-formulario-1;
-     border: 1px $bg-color-formulario-11 solid;
+     background-color:$color6;
      border-radius: $border;                 
      margin: auto;
      padding: 4.5rem;
      width: 60%;
 
-     .datos-personales{
-         display:flex;
-         flex-direction: row;
-         
-         justify-content: space-evenly;
-         margin-bottom: 2.5rem;
-     }
    
      .formulario__label{
                 padding: $paddingH2;
@@ -585,46 +573,6 @@ h2 {text-align: center;
                 width: 100%;
                 }
  
-            .formulario__input{
-             background-color: white;
-             color:$botonBorde;
-             border:1px solid $bg-color-formulario-11;
-             border-radius: $border;
-             height: 3rem;
-             width: 40%;
-             margin: $marginH2;
-             float: center;
-                }
- 
-             .formulario__input--ingrediente{
-                 background-color: white;
-                 color:$botonBorde;
-                 border:1px solid $bg-color-formulario-11;
-                 border-radius: $border;
-                 height: 3rem;
-                 width: 80%;
-                 margin: $marginH2;     
-                 }
- 
-             .formulario__input--pasos{
-             background-color: white;
-             color:$botonBorde;
-             border:1px solid $bg-color-formulario-11;
-             border-radius: $border;
-             height: 5rem;
-             width: 80%;
-             margin: $marginH2;
-             }
- 
-            .formulario__boton--ingrediente{
-             background-color: pink;
-             border-radius: $border;
-             border: 1px solid rgb(233, 183, 229);
-             padding: $botonPadding;
-             font-family: $FontH2;
-             color:white;
-             width:3rem;
-            }
  
             .formulario__boton{
  
@@ -638,8 +586,9 @@ h2 {text-align: center;
          }
  
          .formulario__img {
-             width:3rem;
-             height: 3rem;
+             margin-top: 0.8rem;
+             width:2rem;
+             height: 2rem;
              &:hover{background-color: $bg-color-formulario-4;}
              
          }

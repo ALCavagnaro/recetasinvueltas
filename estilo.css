@@ -467,40 +467,12 @@ h2 {
   margin: auto;
 }
 
-.contenido {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .formulario {
-  background-color: #ffe7dc;
-  border: 1px #181300 solid;
+  background-color: #64e6b4;
   border-radius: 5px;
   margin: auto;
   padding: 4.5rem;
   width: 60%;
-}
-
-.formulario .datos-personales {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-bottom: 2.5rem;
 }
 
 .formulario .formulario__label {
@@ -508,47 +480,6 @@ h2 {
   font-size: 110%;
   margin: 1%;
   width: 100%;
-}
-
-.formulario .formulario__input {
-  background-color: white;
-  color: whitesmoke solid 2px;
-  border: 1px solid #181300;
-  border-radius: 5px;
-  height: 3rem;
-  width: 40%;
-  margin: 1rem;
-  float: center;
-}
-
-.formulario .formulario__input--ingrediente {
-  background-color: white;
-  color: whitesmoke solid 2px;
-  border: 1px solid #181300;
-  border-radius: 5px;
-  height: 3rem;
-  width: 80%;
-  margin: 1rem;
-}
-
-.formulario .formulario__input--pasos {
-  background-color: white;
-  color: whitesmoke solid 2px;
-  border: 1px solid #181300;
-  border-radius: 5px;
-  height: 5rem;
-  width: 80%;
-  margin: 1rem;
-}
-
-.formulario .formulario__boton--ingrediente {
-  background-color: pink;
-  border-radius: 5px;
-  border: 1px solid #e9b7e5;
-  padding: 0.5rem;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  width: 3rem;
 }
 
 .formulario .formulario__boton {
@@ -561,8 +492,9 @@ h2 {
 }
 
 .formulario .formulario__img {
-  width: 3rem;
-  height: 3rem;
+  margin-top: 0.8rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .formulario .formulario__img:hover {

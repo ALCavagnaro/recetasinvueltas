@@ -59,41 +59,37 @@
                 <div class="formulario">
                     <form method="get">
                       <div class= "contenido">
-                        <label class= "formulario__label" for="email">Correo electrónico</label>
-                        <input class="formulario__input" required= "required" type="email" name="email" placeholder="Ej.:maría@email.com" id="inputEmail4">
-                        <br>
-                        <br>
-                        <label class= "formulario__label" for="formGroupExampleInput">Título de la receta</label>
-                        <input class="formulario__input" required="required" type="text" maxlength="50" placeholder="Ingresá el título de tu receta" id="formGroupExampleInput">
-                        <br>
-                        <br>
-                        <label class= "formulario__label" for="email">Ingresá los ingredientes de tu receta</label>
-                        <input class="formulario__input--ingrediente" type="text" placeholder="1er. ingrediente. Ej: 200 g. de manteca" maxlength="50">
-                        <br>
-                        <input class="formulario__input--ingrediente" type="text" placeholder="2do. ingrediente. Ej: 1/2 L. de leche descremada" maxlength="50" id="formGroupExampleInput">
-                        <br>
-                        <input class="formulario__input--ingrediente" type="text" placeholder="3er. ingrediente. Ej: 3 yemas de huevo" maxlength="50" id="formGroupExampleInput">
-                        <br>
+                        <div class="col-md-12  formulario-contacto__correo">
+                            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ejemplo@ejemplo.com" aria-describedby="emailHelp" required>
+                            <div id="emailHelp" class="form-text">Nunca compartiremos tu dirección de correo electrónico</div>
+                          </div>
+                          <div class="col-md-12 formulario-contacto__label">
+                            <label for="validationServer02" class="form-label">Título de la receta</label>
+                            <input type="text" class="form-control" id="validationServer02" maxlenght="50" placeholder="Ingresa el título de tu receta" required>
+                          </div>
+                          <div class="col-md-12 formulario-contacto__label">
+                            <label for="validationServer02" class="form-label">Agrega los ingredientes de tu receta</label>
+                            <input type="text" class="form-control" id="validationServer02" maxlenght="50" placeholder="Ej. 500 g. de harina" required>
+                          </div>
                         <div class="formulario__agregar">
                           <img class="formulario__img" src="img/add.png">
                           <strong>Agregar ingrediente</strong>
                         </div>
                         <br>
-                        <label class= "formulario__label" for="email">Describe brevemente los pasos</label>
-                        <textarea class="formulario__input--pasos" type="text" placeholder="Max. 250 caracteres" maxlength="250"></textarea>
-                        <br>
-                        <textarea class="formulario__input--pasos" type="text" placeholder="Max. 250 caracteres" maxlength="250"></textarea> 
-                        <br>
-                        <textarea class="formulario__input--pasos" type="text" placeholder="Max. 250 caracteres" maxlength="250"></textarea>
-                        <br>
+                        <div class="col-md-12 form-floating">
+                          <p>Agrega los pasos de tu receta</p>
+                          <textarea class="form-control" id="floatingTextarea2" maxlength="250" style="height: 5rem"></textarea>
+                          <label for="floatingTextarea2"></label>
+                        </div>
                         <div class="formulario__agregar">
                           <img class="formulario__img" src="img/add.png">
                           <strong>Agregar paso</strong>
                         </div>
                         <br>
                         <div>
-                            <label class= "formulario__label" for="email">¿Para cuántas porciones rinde tu receta?</label>
-                            <select>
+                            <p>¿Para cuántas porciones rinde tu receta?</p>
+                            <select class="col-md-12 form-floating">
                             <option selected>Seleccioná el número de porciones</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -105,16 +101,16 @@
                         </div>
                         <br>
                         <br>
-                        <div>
-                            <label class="formulario__boton">Podés subir una foto de tu receta acá</label>
-                            <input class="formulario__input" type="file">    
-                        </div>
+                          <div>
+                            <p>Podés subir una foto de tu receta</p>
+                            <input class="formulario__boton col-md-12" type="file" id="formFile">
+                          </div>
                         <br>
                         <br>
                       </div>  
                         <div class="check__input">
                             <input type="checkbox" name="acepta" value="1" />  
-                            <label> Estoy de acuerdo con los<a href="..."> términos y condiciones</a> </label>                            
+                            <label> Estoy de acuerdo con los<a href="url"> términos y condiciones</a> </label>                            
                         </div>
                         <br>
                         <br>
