@@ -576,50 +576,10 @@ h2 {
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   /*tablet*/
   .formulario {
-    width: 80%;
+    width: 85%;
   }
-  .formulario .datos-personales {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    margin-bottom: 2.5rem;
-  }
-  .formulario .formulario__input, .formulario .formulario__input--ingrediente, .formulario select {
-    width: 90%;
-  }
-  .formulario .formulario__input--pasos {
-    width: 100%;
-    height: 10rem;
-  }
-  .formulario .boton_enviarBorrar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .formulario .check__input {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  select {
+    width: 95%;
   }
 }
 
@@ -628,59 +588,15 @@ h2 {
   .formulario {
     width: 100%;
   }
-  .formulario .datos-personales {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    border: solid purple 2px;
-    margin-bottom: 2.5rem;
-  }
-  .formulario .formulario__input, .formulario .formulario__input--ingrediente, .formulario select {
-    width: 100%;
-  }
-  .formulario .formulario__input--pasos {
-    width: 100%;
-    height: 12rem;
-  }
   .formulario label, .formulario strong {
     text-align: center;
   }
-  .formulario__label {
+  .formulario .formulario__label {
     padding: 1%;
     font-size: 110%;
     margin: 1%;
     width: 100%;
     text-align: center;
-  }
-  .boton_enviarBorrar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .check__input {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 }
 

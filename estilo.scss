@@ -643,70 +643,27 @@ h2 {text-align: center;
  
      @media only screen and (min-width: 401px) and (max-width: 960px) {                /*tablet*/
         
-         .formulario{width: 60%+20%;
+         .formulario {
+             
+            width: 85%;   
+     }
 
-            .datos-personales{
-                display:flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                margin-bottom: 2.5rem;
-            }
-         
-             .formulario__input, .formulario__input--ingrediente, select { 
-                 width: 90%;
-             }
+     select{
  
-             .formulario__input--pasos {
-                 width: 100%;
-                 height: 10rem;
-             }
-             .boton_enviarBorrar {
-                 display: flex;
-                 flex-direction: row;
-                 justify-content: space-between;
-                 flex-wrap: wrap;
-             }
- 
-             .check__input {
-                 display: flex;
-                 flex-direction: row;
-             }
- 
-     }
-     
+        width: 95%;
+    
+    }
      
      }
- 
-         
- 
- 
-     
  
      @media only screen and (max-width: 400px){                   /*celular*/
-         .formulario {width: 100%;
-
-        .datos-personales{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        border: solid purple 2px;
-        margin-bottom: 2.5rem;
-            }
          
-         .formulario__input, .formulario__input--ingrediente, select { 
-             
-             width: 100%;
-         }
-         .formulario__input--pasos {
-             width: 100%;
-             height: 12rem;
-         }
+        .formulario {
+            width: 100%;
  
- 
- 
-         label, strong {text-align: center;}
- 
-         }
+         label, strong {
+             text-align: center;
+            }
  
          .formulario__label{
              padding: 1%;
@@ -715,20 +672,10 @@ h2 {text-align: center;
              width: 100%;
              text-align: center;
              }
+        }
  
-             .boton_enviarBorrar {
-                 display: flex;
-                 flex-direction: row;
-                 justify-content: space-between;
-                 flex-wrap: wrap;
-             }
- 
-             .check__input {
-                 display: flex;
-                 flex-direction: row;
-             }
- 
-     }
+    }
+
 
 
 /*El grid es para "Mi semana" . La versión PC tiene 7 columnas y tres filas. Para responsive, se usa una única columna*/
