@@ -59,32 +59,30 @@
                 <div class="formulario">
                     <form method="get">
                       <div class= "contenido">
-                        <div class="col-md-12  formulario-contacto__correo">
+                        <div class="col-md-12  formulario-contacto__correo formulario__margen">
                             <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ejemplo@ejemplo.com" aria-describedby="emailHelp" required>
                             <div id="emailHelp" class="form-text">Nunca compartiremos tu dirección de correo electrónico</div>
                           </div>
-                          <div class="col-md-12 formulario-contacto__label">
+                          <div class="col-md-12 formulario-contacto__label formulario__margen">
                             <label for="validationServer02" class="form-label">Título de la receta</label>
                             <input type="text" class="form-control" id="validationServer02" maxlenght="50" placeholder="Ingresa el título de tu receta" required>
                           </div>
-                          <div class="col-md-12 formulario-contacto__label">
-                            <label for="validationServer02" class="form-label">Agrega los ingredientes de tu receta</label>
+                          <div class="col-md-12 formulario-contacto__label formulario__margen">
+                            <label for="validationServer02" class="form-label">Agregá los ingredientes de tu receta</label>
                             <input type="text" class="form-control" id="validationServer02" maxlenght="50" placeholder="Ej. 500 g. de harina" required>
                           </div>
-                        <div class="formulario__agregar">
-                          <img class="formulario__img" src="img/add.png">
-                          <strong>Agregar ingrediente</strong>
+                        <div class="formulario__agregar formulario__margen">
+                          <button class="formulario__boton2" type="submit" value="Ingrediente">Agregar un ingrediente</button>
                         </div>
                         <br>
-                        <div class="col-md-12 form-floating">
-                          <p>Agrega los pasos de tu receta</p>
+                        <div class="col-md-12 form-floating formulario__margen">
+                          <p>Describí brevemente los pasos</p>
                           <textarea class="form-control" id="floatingTextarea2" maxlength="250" style="height: 5rem"></textarea>
                           <label for="floatingTextarea2"></label>
                         </div>
-                        <div class="formulario__agregar">
-                          <img class="formulario__img" src="img/add.png">
-                          <strong>Agregar paso</strong>
+                        <div class="formulario__agregar formulario__margen">
+                          <button class="formulario__boton2" type="submit" value="Paso">Agregar un paso</button>
                         </div>
                         <br>
                         <div>
@@ -103,12 +101,12 @@
                         <br>
                           <div>
                             <p>Podés subir una foto de tu receta</p>
-                            <input class="formulario__boton col-md-12" type="file" id="formFile">
+                            <input class="formulario__foto col-md-12 form-floating" type="file" id="formFile">
                           </div>
                         <br>
                         <br>
                       </div>  
-                        <div class="check__input">
+                        <div class="formulario__checkbox">
                             <input type="checkbox" name="acepta" value="1" />  
                             <label> Estoy de acuerdo con los<a href="url"> términos y condiciones</a> </label>                            
                         </div>

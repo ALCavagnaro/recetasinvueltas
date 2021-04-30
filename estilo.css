@@ -468,27 +468,25 @@ h2 {
 }
 
 .formulario {
-  background-color: #64e6b4;
+  background-color: #e67364;
   border-radius: 5px;
   margin: auto;
   padding: 4.5rem;
   width: 60%;
 }
 
-.formulario .formulario__label {
-  padding: 2rem;
-  font-size: 110%;
-  margin: 1%;
-  width: 100%;
+.formulario .formulario__margen {
+  margin-bottom: 2rem;
 }
 
-.formulario .formulario__boton {
+.formulario .formulario__foto {
   background-color: #bbded6;
   border-radius: 5px;
   border: 1px solid #61c0bf;
   padding: 0.5rem;
   font-family: "Roboto", sans-serif;
   color: #4b4747;
+  width: 100%;
 }
 
 .formulario .formulario__img {
@@ -502,6 +500,7 @@ h2 {
 }
 
 .formulario .formulario__agregar {
+  /*Se refiere a agregar un ingrediente o un paso*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,9 +508,11 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
 
@@ -534,7 +535,41 @@ h2 {
 }
 
 .formulario .boton_enviarBorrar {
-  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  margin: auto;
+}
+
+.formulario .formulario__checkbox {
+  width: 60%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 /*Este estilo afecta al ingreso de recetas para responsive*/
