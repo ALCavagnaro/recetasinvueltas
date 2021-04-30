@@ -553,7 +553,7 @@ nav {
 
 
 
-h2 {text-align: center;
+h1 {text-align: center;
     padding:3rem;
     margin: auto;
  }
@@ -683,12 +683,14 @@ h2 {text-align: center;
 .semana {                                                           
     display:grid;
     grid-template-columns: repeat(7, $gridSize);
-    grid-template-rows: 10% 45% 45%;
+    grid-template-rows: 10% 10% 35% 10% 35%;
     grid-column-gap: 2px;
     grid-row-gap: 1px; 
-    grid-template-areas: "domingo lunes martes miércoles jueves viernes sábado"
-                         "aDomingo aLunes aMartes aMiércoles aJueves aViernes aSábado"
-                         "cDomingo cLunes cMartes cMiércoles cJueves cViernes cSábado";
+    grid-template-areas: "encabezado-domingo encabezado-lunes encabezado-martes encabezado-miércoles encabezado-jueves encabezado-viernes encabezado-sábado"
+                         "almuerzo-domingo almuerzo-lunes almuerzo-martes almuerzo-miércoles almuerzo-jueves almuerzo-viernes almuerzo-sábado"
+                         "menú-alumerzo-domingo menú-alumerzo-lunes menú-alumerzo-martes menú-alumerzo-miércoles menú-alumerzo-jueves menú-alumerzo-viernes menú-alumerzo-sábado"
+                         "cena-domingo cena-lunes cena-martes cena-miércoles cena-jueves cena-viernes cena-sábado"
+                         "menú-cena-domingo menú-cena-lunes menú-cena-martes menú-cena-miércoles menú-cena-jueves menú-cena-viernes menú-cena-sábado";
     padding:8px;
     width: 99.9%;
     background-color: $bg-color-formulario-3;
@@ -698,69 +700,124 @@ h2 {text-align: center;
 
 }
 
-
-.nada1 {
-
-    grid-area:aDomingo;
+.encabezado-domingo {
+    grid-area:encabezado-domingo;
+    @extend%header;
     
 }
 
-.nada2{
-    grid-area:aLunes;
-}   
-
-.nada3{
-    grid-area:aMartes;
-    
+.encabezado-lunes {
+    grid-area:encabezado-lunes;
+    @extend%header;
 }
 
-.nada4 {
-    grid-area:aMiércoles;
-    
+.encabezado-martes {
+    grid-area:encabezado-martes;
+    @extend%header;
 }
 
-.nada5 {
-    grid-area:aJueves;
-    
+.encabezado-miércoles {
+    grid-area:encabezado-miércoles;
+    @extend%header;
 }
 
-.nada6 {
-    grid-area:aViernes;
-    
+.encabezado-jueves {
+    grid-area:encabezado-jueves;
+    @extend%header;
 }
 
-.nada7 {
-    grid-area:aSábado;
-    
+.encabezado-viernes {
+    grid-area:encabezado-viernes;
+    @extend%header;
 }
 
-.nada8 {
-    grid-area:cDomingo;
-    
+.encabezado-sábado {
+    grid-area:encabezado-sábado;
+    @extend%header;
 }
 
-.nada9 {
-    grid-area:cLunes;
-    
+.almuerzo-domingo {
+    grid-area: almuerzo-domingo;
+    text-align: center;
+    margin:0.2rem;
 }
-.nada10{
-    grid-area:cMartes;
-    
+
+.almuerzo-lunes {
+    grid-area: almuerzo-lunes;
+    text-align: center;
+    margin:0.2rem;
 }
-.nada11{
-    grid-area:cMiércoles;
-    
+
+.almuerzo-martes {
+    grid-area: almuerzo-martes;
+    text-align: center;
+    margin:0.2rem;
 }
-.nada12{
-    grid-area:cJueves;
-    
+
+.almuerzo-miércoles {
+    grid-area: almuerzo-miércoles;
+    text-align: center;
+    margin:0.2rem;
 }
-.nada13{
-    grid-area:cViernes;
-    
+
+.almuerzo-jueves {
+    grid-area: almuerzo-jueves;
+    text-align: center;
+    margin:0.2rem;
 }
-.nada14{
-    grid-area:cSábado;
+
+.almuerzo-viernes {
+    grid-area: almuerzo-viernes;
+    text-align: center;
+    margin:0.2rem;
+}
+
+.almuerzo-sábado {
+    grid-area: almuerzo-sábado;
+    text-align: center;
+    margin:0.2rem;
+}
+
+.cena-domingo {
+    grid-area: cena-domingo;
+    text-align: center;
+    margin:0.2rem;
+}
+
+.cena-lunes {
+    grid-area: cena-lunes;
+    text-align: center;
+    margin:0.2rem;
+}
+
+.cena-martes {
+    grid-area: cena-martes;
+    text-align: center;
+    margin:0.2rem;
+}
+
+.cena-miércoles {
+    grid-area: cena-miércoles;
+    text-align: center;
+    margin:0.2rem;
+}
+
+.cena-jueves {
+    grid-area: cena-jueves;
+    text-align: center;
+    margin:0.2rem;
+}
+
+.cena-viernes {
+    grid-area: cena-viernes;
+    text-align: center;
+    margin:0.2rem;
+}
+
+.cena-sábado {
+    grid-area: cena-sábado;
+    text-align: center;
+    margin:0.2rem;
 }
 
 %header {
@@ -773,8 +830,48 @@ font-size: $SizeFontH2;
 font-weight: bold;
 }
 
-.comida{
-@extend%header;
+.menú-alumerzo-domingo {
+    grid-area: menú-alumerzo-domingo;
+}
+.menú-alumerzo-lunes {
+    grid-area: menú-alumerzo-lunes;
+}
+.menú-alumerzo-martes {
+    grid-area: menú-alumerzo-martes;
+}
+.menú-alumerzo-miércoles {
+    grid-area: menú-alumerzo-miércoles;
+}
+.menú-alumerzo-jueves {
+    grid-area: menú-alumerzo-jueves;
+}
+.menú-alumerzo-viernes{
+    grid-area: menú-alumerzo-viernes;
+}
+.menú-alumerzo-sábado {
+    grid-area: menú-alumerzo-sábado;
+}
+
+.menú-cena-domingo {
+    grid-area: menú-cena-domingo;
+}
+.menú-cena-lunes {
+    grid-area: menú-cena-lunes;
+}
+.menú-cena-martes {
+    grid-area: menú-cena-martes;
+}
+.menú-cena-miércoles {
+    grid-area: menú-cena-miércoles;
+}
+.menú-cena-jueves {
+    grid-area: menú-cena-jueves;
+}
+.menú-cena-viernes{
+    grid-area: menú-cena-viernes;
+}
+.menú-cena-sábado {
+    grid-area: menú-cena-sábado;
 }
 
 .completar{
@@ -785,44 +882,6 @@ font-weight: bold;
     padding: $botonPadding;
 }
 
-.domingo{
-    grid-area: domingo;
-    @extend%header;
-}
-
-.lunes{
-    grid-area: lunes;
-    @extend%header;
-}
-
-.martes{
-    grid-area: martes;
-    @extend%header;
-    
-}
-
-.miércoles{
-    grid-area: miércoles;
-    @extend%header;
-
-}
-
-.jueves{ 
-    grid-area: jueves;
-    @extend%header;
-}
-
-.viernes{
-
-    grid-area: viernes;
-    @extend%header;
-}
-
-.sábado{
-    grid-area: sábado;
-    @extend%header;
-} 
-
 
 @media only screen and (max-width: 400px) { /*celular*/
 
@@ -832,27 +891,43 @@ font-weight: bold;
         grid-template-rows: repeat(21, 1fr);
         grid-column-gap: 2px;
         grid-row-gap: 1px; 
-        grid-template-areas: "domingo"
-                             "aDomingo"
-                             "cDomingo" 
-                             "lunes"
-                             "aLunes"
-                             "cLunes" 
-                             "martes"
-                             "aMartes"
-                             "cMartes" 
-                             "miércoles"
-                             "aMiércoles"
-                             "cMiércoles" 
-                             "jueves"
-                             "aJueves"
-                             "cJueves" 
-                             "viernes"
-                             "aViernes"
-                             "cViernes" 
-                             "sábado"
-                             "aSábado"
-                             "cSábado";
+        grid-template-areas: 
+
+        "encabezado-domingo"
+        "almuerzo-domingo"
+        "menú-alumerzo-domingo"
+        "cena-domingo"
+        "menú-cena-domingo" 
+        "encabezado-lunes"
+        "almuerzo-lunes"
+        "menú-alumerzo-lunes"
+        "cena-lunes"
+        "menú-cena-lunes" 
+        "encabezado-martes"
+        "almuerzo-martes"
+        "menú-alumerzo-martes"
+        "cena-martes"
+        "menú-cena-martes"    
+        "encabezado-miércoles"
+        "almuerzo-miércoles"
+        "menú-alumerzo-miércoles"
+        "cena-miércoles"
+        "menú-cena-miércoles"    
+        "encabezado-jueves"
+        "almuerzo-jueves" 
+        "menú-alumerzo-jueves"
+        "cena-jueves"
+        "menú-cena-jueves"
+        "encabezado-viernes"
+        "almuerzo-viernes"
+        "menú-alumerzo-viernes"
+        "cena-viernes"
+        "menú-cena-viernes"    
+        "encabezado-sábado"
+        "almuerzo-sábado" 
+        "menú-alumerzo-sábado"
+        "cena-sábado"
+        "menú-cena-sábado";
     }
 
 
@@ -866,27 +941,42 @@ font-weight: bold;
         grid-template-rows: repeat(21, 1fr);
         grid-column-gap: 2px;
         grid-row-gap: 1px; 
-        grid-template-areas: "domingo"
-                             "aDomingo"
-                             "cDomingo" 
-                             "lunes"
-                             "aLunes"
-                             "cLunes" 
-                             "martes"
-                             "aMartes"
-                             "cMartes" 
-                             "miércoles"
-                             "aMiércoles"
-                             "cMiércoles" 
-                             "jueves"
-                             "aJueves"
-                             "cJueves" 
-                             "viernes"
-                             "aViernes"
-                             "cViernes" 
-                             "sábado"
-                             "aSábado"
-                             "cSábado";
+        grid-template-areas:
+        "encabezado-domingo"
+        "almuerzo-domingo"
+        "menú-alumerzo-domingo"
+        "cena-domingo"
+        "menú-cena-domingo" 
+        "encabezado-lunes"
+        "almuerzo-lunes"
+        "menú-alumerzo-lunes"
+        "cena-lunes"
+        "menú-cena-lunes" 
+        "encabezado-martes"
+        "almuerzo-martes"
+        "menú-alumerzo-martes"
+        "cena-martes"
+        "menú-cena-martes"    
+        "encabezado-miércoles"
+        "almuerzo-miércoles"
+        "menú-alumerzo-miércoles"
+        "cena-miércoles"
+        "menú-cena-miércoles"    
+        "encabezado-jueves"
+        "almuerzo-jueves" 
+        "menú-alumerzo-jueves"
+        "cena-jueves"
+        "menú-cena-jueves"
+        "encabezado-viernes"
+        "almuerzo-viernes"
+        "menú-alumerzo-viernes"
+        "cena-viernes"
+        "menú-cena-viernes"    
+        "encabezado-sábado"
+        "almuerzo-sábado" 
+        "menú-alumerzo-sábado"
+        "cena-sábado"
+        "menú-cena-sábado";
     }
 
 
