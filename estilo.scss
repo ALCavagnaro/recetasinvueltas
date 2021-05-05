@@ -17,6 +17,7 @@ $bg-color-formulario-8:#fff3c3; /* Para el estilo del formulario de ingreso a re
 $bg-color-formulario-9:#fff8dc; /* Para el estilo del formulario de ingreso a receta y contacto*/  
 $bg-color-formulario-10:#fffdf6;/* Para el estilo del formulario de ingreso a receta y contacto*/
 $bg-color-formulario-11:#181300;/* Para el estilo del formulario de ingreso a receta y contacto*/
+$bg-color-formulario-12:#949c9c; /* Para el estilo del formulario de ingreso a receta y contacto*/
 $color-secondary:cornsilk;      /*Utilizado para el fondo del modal en las recetas*/
 $color1: #6496e6; /*Color complementario al del header y footer*/
 $color2: #e67364; /*Color análogo al del header y footer*/
@@ -527,16 +528,20 @@ nav {
 /*Para la pág. de contacto*/
 
 .formulario-contacto {
-    background-color: $color2;
+
+
+    background-color: #74BABC;
     width: 80%;
     margin: 5% 10% 10%;
     padding:2REM;
     border-radius: $border;
 }
 
-.contacto__boton{
-    @extend%boton;
-}
+    .contacto__boton {
+        @extend%boton;
+        background-color: $bg-color-formulario-12;
+    }
+
 
 /*Celular pág. de contacto*/
 
@@ -559,7 +564,7 @@ h1, h2 {text-align: center;
  }
  
  .formulario {               
-     background-color:$color2;
+     background-color:#ffdbe2;
      border-radius: $border;                 
      margin: auto;
      padding: 4.5rem;
@@ -614,6 +619,7 @@ h1, h2 {text-align: center;
  
          .formulario__boton2{
          @extend%boton;
+         background-color: #f1e9ea;
          float: right;
          }
  

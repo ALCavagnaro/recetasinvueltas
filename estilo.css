@@ -15,6 +15,7 @@
 /* Para el estilo del formulario de ingreso a receta y contacto*/
 /* Para el estilo del formulario de ingreso a receta y contacto*/
 /* Para el estilo del formulario de ingreso a receta y contacto*/
+/* Para el estilo del formulario de ingreso a receta y contacto*/
 /*Utilizado para el fondo del modal en las recetas*/
 /*Color complementario al del header y footer*/
 /*Color análogo al del header y footer*/
@@ -444,11 +445,15 @@ h3 {
 
 /*Para la pág. de contacto*/
 .formulario-contacto {
-  background-color: #e67364;
+  background-color: #74BABC;
   width: 80%;
   margin: 5% 10% 10%;
   padding: 2REM;
   border-radius: 5px;
+}
+
+.contacto__boton {
+  background-color: #949c9c;
 }
 
 /*Celular pág. de contacto*/
@@ -468,7 +473,7 @@ h1, h2 {
 }
 
 .formulario {
-  background-color: #e67364;
+  background-color: #ffdbe2;
   border-radius: 5px;
   margin: auto;
   padding: 4.5rem;
@@ -531,6 +536,7 @@ h1, h2 {
 }
 
 .formulario .formulario__boton2 {
+  background-color: #f1e9ea;
   float: right;
 }
 
