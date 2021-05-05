@@ -593,6 +593,8 @@ h1, h2 {
   /*celular*/
   .formulario {
     width: 100%;
+    margin: 2% 1% 1%;
+    padding: 0.8rem;
   }
   .formulario label, .formulario strong {
     text-align: center;
