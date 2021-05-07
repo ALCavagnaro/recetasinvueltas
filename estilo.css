@@ -966,7 +966,7 @@ footer .footer__p {
   font-size: 1.1rem;
   color: black;
   padding: 0.1rem;
-  text-align: center;
+  margin: auto;
   font-weight: 800;
 }
 
