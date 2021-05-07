@@ -387,6 +387,10 @@ nav {
 
     @media only screen and (max-width: 400px) {                       /*celular*/
         
+        .modal-title{
+            font-size: 200%;
+            text-align: center;
+        }
         .modal-footer{
             display: flex;
             flex-direction: column;
@@ -409,19 +413,19 @@ nav {
 
 
 
-.acordion__boton1, .acordion__boton4, .acordion__boton7 {
+.acordion__boton1, .acordion__boton4, .acordion__boton7, .acordion__boton10, .acordion__boton13  {
 @include boton2 ($color7, 99.9%, 5rem);
 @extend %boton;
 &:hover{background-color:grey;}
 }
 
-.acordion__boton2, .acordion__boton5, .acordion__boton8 {
+.acordion__boton2, .acordion__boton5, .acordion__boton8, .acordion__boton11 {
     @include boton2 ($color4, 99.9%, 5rem);
     @extend %boton;
     &:hover{background-color:grey;}
     }
 
-.acordion__boton3, .acordion__boton6, .acordion__boton9 {
+.acordion__boton3, .acordion__boton6, .acordion__boton9, .acordion__boton12 {
     @include boton2 ($color6, 99.9%, 5rem);
     @extend %boton;
     &:hover{background-color:grey;}
@@ -550,7 +554,7 @@ nav {
 .formulario-contacto {
     width: 100%;
     margin: 2% 1% 1%;
-    padding: 0.8rem;
+    padding: 1.5rem;
 }
 }
 
@@ -667,7 +671,7 @@ h1, h2 {text-align: center;
         .formulario {
             width: 100%;
             margin: 2% 1% 1%;
-            padding: 0.8rem;
+            padding: 1.5rem;
  
          label, strong {
              text-align: center;

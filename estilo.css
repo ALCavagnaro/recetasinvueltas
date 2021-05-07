@@ -66,7 +66,7 @@ main {
   padding-bottom: 2rem;
 }
 
-nav .boton, .modal__boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .contacto__boton, .formulario .formulario__boton2, .descarga .descarga__boton {
+nav .boton, .modal__boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton10, .acordion .acordion__boton13, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton11, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .acordion .acordion__boton12, .contacto__boton, .formulario .formulario__boton2, .descarga .descarga__boton {
   background-color: lightpink;
   border-radius: 5px;
   border: whitesmoke solid 2px;
@@ -88,7 +88,7 @@ nav {
 }
 
 /*Botones en gral. de todo el sitio*/
-nav .boton, .modal__boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .contacto__boton, .formulario .formulario__boton2, .descarga .descarga__boton {
+nav .boton, .modal__boton, .acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton10, .acordion .acordion__boton13, .acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton11, .acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .acordion .acordion__boton12, .contacto__boton, .formulario .formulario__boton2, .descarga .descarga__boton {
   background-color: lightpink;
   border-radius: 5px;
   border: whitesmoke solid 2px;
@@ -306,6 +306,10 @@ h3 {
 /*Modal de recetas para celular. Lo que hace es acomodar los botones del footer en modo responsive*/
 @media only screen and (max-width: 400px) {
   /*celular*/
+  .modal-title {
+    font-size: 200%;
+    text-align: center;
+  }
   .modal-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -329,33 +333,33 @@ h3 {
   padding: 0.1rem;
 }
 
-.acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7 {
+.acordion .acordion__boton1, .acordion .acordion__boton4, .acordion .acordion__boton7, .acordion .acordion__boton10, .acordion .acordion__boton13 {
   background-color: #e66496;
   width: 99.9%;
   height: 5rem;
 }
 
-.acordion .acordion__boton1:hover, .acordion .acordion__boton4:hover, .acordion .acordion__boton7:hover {
+.acordion .acordion__boton1:hover, .acordion .acordion__boton4:hover, .acordion .acordion__boton7:hover, .acordion .acordion__boton10:hover, .acordion .acordion__boton13:hover {
   background-color: grey;
 }
 
-.acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8 {
+.acordion .acordion__boton2, .acordion .acordion__boton5, .acordion .acordion__boton8, .acordion .acordion__boton11 {
   background-color: #64d7e6;
   width: 99.9%;
   height: 5rem;
 }
 
-.acordion .acordion__boton2:hover, .acordion .acordion__boton5:hover, .acordion .acordion__boton8:hover {
+.acordion .acordion__boton2:hover, .acordion .acordion__boton5:hover, .acordion .acordion__boton8:hover, .acordion .acordion__boton11:hover {
   background-color: grey;
 }
 
-.acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9 {
+.acordion .acordion__boton3, .acordion .acordion__boton6, .acordion .acordion__boton9, .acordion .acordion__boton12 {
   background-color: #64e6b4;
   width: 99.9%;
   height: 5rem;
 }
 
-.acordion .acordion__boton3:hover, .acordion .acordion__boton6:hover, .acordion .acordion__boton9:hover {
+.acordion .acordion__boton3:hover, .acordion .acordion__boton6:hover, .acordion .acordion__boton9:hover, .acordion .acordion__boton12:hover {
   background-color: grey;
 }
 
@@ -461,7 +465,7 @@ h3 {
   .formulario-contacto {
     width: 100%;
     margin: 2% 1% 1%;
-    padding: 0.8rem;
+    padding: 1.5rem;
   }
 }
 
@@ -594,7 +598,7 @@ h1, h2 {
   .formulario {
     width: 100%;
     margin: 2% 1% 1%;
-    padding: 0.8rem;
+    padding: 1.5rem;
   }
   .formulario label, .formulario strong {
     text-align: center;
