@@ -967,6 +967,7 @@ footer p {
   color: black;
   padding: 0.1rem;
   text-align: center;
+  font-weight: 300;
 }
 
 footer .socialMedia {
@@ -991,7 +992,7 @@ footer .mapa-de-sitio__titulo {
   font-family: "Noto Sans HK", sans-serif;
   font-size: 1.1rem;
   text-align: center;
-  font-weight: 800;
+  font-weight: 200;
   margin: 1rem;
 }
 

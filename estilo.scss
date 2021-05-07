@@ -1033,11 +1033,12 @@ footer {
     justify-content: space-around;
     align-items: center;
     
-       p { font-family: $fontFooter;
+       p {   font-family: $fontFooter;
              font-size: $fontSizeFooter;
              color: $fontFooterColor;
              padding: $paddingFooter;
              text-align: center;
+             font-weight: 300;
              
          }
 
@@ -1061,7 +1062,7 @@ footer {
             font-family: $fontFooter;
             font-size: $fontSizeFooter;
             text-align: center;
-            font-weight: 800;
+            font-weight: 200;
             margin: 1rem;
         }
 
