@@ -446,11 +446,7 @@ nav {
         
         width:100%;
        
-
 }
-
-
-
 
 }
 
@@ -460,7 +456,6 @@ nav {
         
         width:100%;
        
-
 }
 
 }
@@ -546,6 +541,9 @@ nav {
         background-color: $bg-color-formulario-12;
     }
 
+.modal-body__p{
+    text-align: justify;
+}
 
 /*Celular pág. de contacto*/
 
@@ -580,9 +578,8 @@ h1, h2 {text-align: center;
  
             .formulario__foto{
  
-             background-color: $botonColor2;
+             background-color: white;
              border-radius: $border;
-             border: 1px solid $botonBorde2;
              padding: $botonPadding;
              font-family: $FontH2;
              color:rgb(75, 71, 71);
@@ -623,7 +620,7 @@ h1, h2 {text-align: center;
  
          .formulario__boton2{
          @extend%boton;
-         background-color: #f1e9ea;
+         background-color: $color-primary;
          float: right;
          }
  
@@ -838,12 +835,10 @@ text-align: center;
 align-self: center;
 font-family: $FontH2;
 font-size: $SizeFontH2;
-font-weight: bold;
 }
 
 .menú-alumerzo-domingo {
     grid-area: menú-alumerzo-domingo;
-    text-align: center;
 
 }
 .menú-alumerzo-lunes {
