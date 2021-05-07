@@ -628,7 +628,6 @@ h1, h2 {
   background-color: #ffdce3;
   margin: auto;
   border-radius: 5px;
-  border: 1px solid #181300;
 }
 
 .encabezado-domingo {
@@ -801,6 +800,7 @@ h1, h2 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: menú-alumerzo-domingo;
+  text-align: center;
 }
 
 .menú-alumerzo-lunes {
@@ -914,8 +914,8 @@ h1, h2 {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 8%;
-        grid-template-rows: 8%;
+    -ms-grid-rows: 5%;
+        grid-template-rows: 5%;
     grid-column-gap: 2px;
     grid-row-gap: 1px;
         grid-template-areas: "encabezado-domingo" "almuerzo-domingo" "menú-alumerzo-domingo" "cena-domingo" "menú-cena-domingo"  "encabezado-lunes" "almuerzo-lunes" "menú-alumerzo-lunes" "cena-lunes" "menú-cena-lunes"  "encabezado-martes" "almuerzo-martes" "menú-alumerzo-martes" "cena-martes" "menú-cena-martes"     "encabezado-miércoles" "almuerzo-miércoles" "menú-alumerzo-miércoles" "cena-miércoles" "menú-cena-miércoles"     "encabezado-jueves" "almuerzo-jueves"  "menú-alumerzo-jueves" "cena-jueves" "menú-cena-jueves" "encabezado-viernes" "almuerzo-viernes" "menú-alumerzo-viernes" "cena-viernes" "menú-cena-viernes"     "encabezado-sábado" "almuerzo-sábado"  "menú-alumerzo-sábado" "cena-sábado" "menú-cena-sábado";
