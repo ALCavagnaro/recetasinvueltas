@@ -1033,12 +1033,13 @@ footer {
     justify-content: space-around;
     align-items: center;
     
-       p {   font-family: $fontFooter;
+       .footer__p {   
+             font-family: $fontFooter;
              font-size: $fontSizeFooter;
              color: $fontFooterColor;
              padding: $paddingFooter;
              text-align: center;
-             font-weight: 300;
+             font-weight: 800;
              
          }
 
@@ -1061,6 +1062,7 @@ footer {
         .mapa-de-sitio__titulo {
             font-family: $fontFooter;
             font-size: $fontSizeFooter;
+            color: $fontFooterColor;
             text-align: center;
             font-weight: 200;
             margin: 1rem;
@@ -1075,13 +1077,13 @@ footer {
             .mapa-de-sitio__encabezado {
                 list-style: none;
                 text-align: left;
-
+                color: $fontFooterColor;
             }
                            
             .mapa-de-sitio__encabezado--enlace{
                 list-style: none;
                 text-align: left;
-
+                color: $fontFooterColor;
                            &:hover  {
                     background-color: $bg-ColorAcordion;
                     cursor: pointer;
@@ -1095,6 +1097,7 @@ footer {
                 list-style: none;
                 text-align: left;
                 margin-left: 1rem;
+                color: $fontFooterColor;
                 &:hover{
                     background-color: $bg-color-formulario-12;
                     cursor: pointer;

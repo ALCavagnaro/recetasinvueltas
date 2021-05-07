@@ -961,13 +961,13 @@ footer {
           align-items: center;
 }
 
-footer p {
+footer .footer__p {
   font-family: "Noto Sans HK", sans-serif;
   font-size: 1.1rem;
   color: black;
   padding: 0.1rem;
   text-align: center;
-  font-weight: 300;
+  font-weight: 800;
 }
 
 footer .socialMedia {
@@ -991,6 +991,7 @@ footer .socialMedia img {
 footer .mapa-de-sitio__titulo {
   font-family: "Noto Sans HK", sans-serif;
   font-size: 1.1rem;
+  color: black;
   text-align: center;
   font-weight: 200;
   margin: 1rem;
@@ -1004,11 +1005,13 @@ footer .mapa-de-sitio__link {
 footer .mapa-de-sitio__encabezado {
   list-style: none;
   text-align: left;
+  color: black;
 }
 
 footer .mapa-de-sitio__encabezado--enlace {
   list-style: none;
   text-align: left;
+  color: black;
 }
 
 footer .mapa-de-sitio__encabezado--enlace:hover {
@@ -1020,6 +1023,7 @@ footer .mapa-de-sitio__submenu {
   list-style: none;
   text-align: left;
   margin-left: 1rem;
+  color: black;
 }
 
 footer .mapa-de-sitio__submenu:hover {
