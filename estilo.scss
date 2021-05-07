@@ -695,7 +695,7 @@ h1, h2 {text-align: center;
 .semana {                                                           
     display:grid;
     grid-template-columns: repeat(7, $gridSize);
-    grid-template-rows: 10% 10% 35% 10% 35%;
+    grid-template-rows: 20% 2% 35% 2% 35%;
     grid-column-gap: 2px;
     grid-row-gap: 1px; 
     grid-template-areas: "encabezado-domingo encabezado-lunes encabezado-martes encabezado-miércoles encabezado-jueves encabezado-viernes encabezado-sábado"
@@ -844,6 +844,7 @@ font-weight: bold;
 
 .menú-alumerzo-domingo {
     grid-area: menú-alumerzo-domingo;
+
 }
 .menú-alumerzo-lunes {
     grid-area: menú-alumerzo-lunes;
@@ -900,7 +901,7 @@ font-weight: bold;
     .semana {                                                           
         display:grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(21, 1fr);
+        grid-template-rows: 5%;
         grid-column-gap: 2px;
         grid-row-gap: 1px; 
         grid-template-areas: 
@@ -942,7 +943,12 @@ font-weight: bold;
         "menú-cena-sábado";
     }
 
+    .encabezado-domingo, .encabezado-lunes, .encabezado-martes, .encabezado-miércoles, .encabezado-jueves, .encabezado-viernes, .encabezado-sábado 
+{
+    background-color: $color-primary;
+    margin: 2rem;
 
+}
 }
 
 @media only screen and (min-width: 401px) and (max-width: 960px)  { /*tablet*/
@@ -950,7 +956,7 @@ font-weight: bold;
     .semana {                                                           
         display:grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(21, 1fr);
+        grid-template-rows: 8%;
         grid-column-gap: 2px;
         grid-row-gap: 1px; 
         grid-template-areas:
@@ -990,7 +996,12 @@ font-weight: bold;
         "cena-sábado"
         "menú-cena-sábado";
     }
-
+    .encabezado-domingo, .encabezado-lunes, .encabezado-martes, .encabezado-miércoles, .encabezado-jueves, .encabezado-viernes, .encabezado-sábado 
+    {
+        background-color: $color-primary;
+        margin: 2rem;
+    
+    }
 
 }
 
@@ -1118,7 +1129,7 @@ footer {
         justify-content: space-around;
         align-items: center;
 
-        p{                                  
+        .footer__p{                                  
             font-size: 1rem;
         }
 
@@ -1138,7 +1149,7 @@ footer {
         justify-content: space-around;
         align-items: center;
     
-    p {                                    
+    .footer__p {                                    
         font-size: 1rem;
     }
 
