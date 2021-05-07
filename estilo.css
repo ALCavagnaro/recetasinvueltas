@@ -317,7 +317,7 @@ h3 {
   }
 }
 
-/*PÁG. 'CONOCÉ MÁS' El acordión afecta a la pag. de info gral*/
+/*PÁG. 'Tips Rápidos' El acordión afecta a la pag. de info gral*/
 .acordion {
   border: 5px;
   border-radius: 5px;
@@ -981,6 +981,45 @@ footer .socialMedia img {
   height: 2rem;
   padding: 0.1rem;
   margin: 0.5rem;
+}
+
+footer .mapa-de-sitio__titulo {
+  font-family: "Noto Sans HK", sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 800;
+  margin: 1rem;
+}
+
+footer .mapa-de-sitio__link {
+  text-decoration: none;
+  color: #181300;
+}
+
+footer .mapa-de-sitio__encabezado {
+  list-style: none;
+  text-align: left;
+}
+
+footer .mapa-de-sitio__encabezado--enlace {
+  list-style: none;
+  text-align: left;
+}
+
+footer .mapa-de-sitio__encabezado--enlace:hover {
+  background-color: #fff6db;
+  cursor: pointer;
+}
+
+footer .mapa-de-sitio__submenu {
+  list-style: none;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+footer .mapa-de-sitio__submenu:hover {
+  background-color: #949c9c;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 400px) {
